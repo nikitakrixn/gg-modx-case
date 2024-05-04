@@ -1,0 +1,72 @@
+.personal-vlog {
+    display: flex;
+    padding-block: 80px;
+    padding-inline: 20px;
+    background-image: url('../img/bg_dragon.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mobile {
+        background-image: url('../img/svg/logotype_horizontal.svg');
+    }
+
+    &__slider {
+        &-list {
+            align-items: baseline;
+        }
+    }
+
+    &-card-video {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 620px;
+        min-height: 259px;
+        filter: blur(3px);
+        transition: all 0.5s ease-in-out;
+
+        &__body {
+            position: relative;
+        }
+
+        &__playbtn {
+            @include abs-center;
+            background-image: url('../img/icon-play-white.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 95px;
+            height: 94px;
+        }
+
+        &__title {
+            display: none;
+            opacity: 0;
+            color: #2F090C;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &.swiper-slide-active {
+            filter: blur(0px);
+
+            .personal-vlog-card-video__title {
+                display: block;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}

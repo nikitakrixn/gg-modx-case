@@ -1,0 +1,31 @@
+// Цвета
+$color-gradient-1-start: #570A0A;
+$color-gradient-1-end: #7B001E;
+$color-gradient-2-start: #E4C87E;
+$color-gradient-2-end: #A58D54;
+$color-background-light: #FFFFFF;
+$color-background-red: #390D19;
+$color-text-light: #FCFCFC;
+$color-text-dark: #210707;
+
+$bg-gradient: linear-gradient(180.00deg, $color-gradient-2-start,$color-gradient-2-end 100%);
+
+$border-radius: 20px;
+$border-radius-small: 8px;
+
+$font-family-base: 'Montserrat';
+
+$container-width: 1200px;
+$container-padding-x: 20px;
+
+$transition-duration: 0.2s;
+
+$section-padding-y: 70px;
+
+@include desktop {
+    $section-padding-y: 50px;
+}
+
+@include mobile {
+    $section-padding-y: 30px;
+}

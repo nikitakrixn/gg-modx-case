@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="./plugin.min.css">
+</head>
+<style>
+   .rating {
+  padding: 80px 0 120px;
+  overflow: hidden;
+}
+.rating__inner {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.rating__title {
+  position: relative;
+  max-width: 1450px;
+  margin: 0 0 44px;
+  padding-left: 54px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #000003;
+}
+.rating__title-text {
+  position: relative;
+  z-index: 5;
+}
+.rating__title-icon1,
+.rating__title-icon2 {
+  position: absolute;
+  z-index: 2;
+  max-width: 290px;
+}
+.rating__title-icon1 {
+  left: 138px;
+  top: 54px;
+}
+.rating__title-icon2 {
+  top: -28px;
+  left: calc(100% - 48px);
+}
+.rating__slider-wrapper {
+  position: relative;
+  z-index: 5;
+}
+.rating__slider {
+  overflow: visible;
+}
+.rating__slider .swiper-slide {
+  margin-top: 60px;
+  opacity: 1;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.rating__slider .swiper-slide.swiper-slide-active {
+  margin-top: 0;
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.rating__slider-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  height: 440px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0px 12px 24px 0px rgba(16, 76, 139, 0.16);
+  background: #fff;
+}
+.rating__slider-item-img {
+  width: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+.rating__slider-item-img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.rating__slider-item-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+}
+.rating__slider-item-rate {
+  margin-bottom: 28px;
+}
+.rating__slider-item-rate-value {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 500;
+  color: #383838;
+}
+.rating__slider-item-rate-text {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  color: #383838;
+}
+.rating__slider-item-rate-stars {
+  margin-top: 24px;
+}
+.rating__slider-item-rate-stars span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.rating__slider-item-rate-stars span:not(:last-child) {
+  margin-right: 4px;
+}
+.rating__slider-item-desc {
+  margin-bottom: 28px;
+  color: #282828;
+}
+.rating__slider-item-desc ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.rating__slider-item-name {
+  margin-top: auto;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  color: #252525;
+}
+.rating__slider-item-town {
+  font-size: 14px;
+  color: #838383;
+}
+.about-us {
+  padding: 60px 0 30px;
+}
+.about-us__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.about-us__info {
+  position: relative;
+  z-index: 10;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 200px;
+  padding-right: 30px;
+  height: 400px;
+}
+
+.about-us__title {
+  margin: 0 0 52px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  color: #000003;
+}
+.about-us__desc {
+  margin: 0 0 54px;
+  font-family: "Montserrat", sans-serif;
+  /*font-size: 24px;*/
+  color: #000;
+}
+.about-us__slider-wrapper {
+  position: relative;
+  z-index: 5;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 1100px;
+}
+.about-us__slider {
+  overflow: visible;
+}
+.about-us__slider.swiper-backface-hidden .swiper-slide {
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  opacity: 0;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.about-us__slider.swiper-backface-hidden .swiper-slide.swiper-slide-active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.about-us__slider .swiper-button-prev {
+  left: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+.about-us__slider .swiper-button-prev:after {
+  font-size: 28px;
+  color: #1c1c1c;
+}
+.about-us__slider .swiper-button-next {
+  right: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+.about-us__slider .swiper-button-next:after {
+  font-size: 28px;
+  color: #1c1c1c;
+}
+.about-us__slider-item {
+  position: relative;
+  height: 620px;
+}
+.about-us__slider-item-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about-us__slider-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us__slider-item-info {
+  position: absolute;
+  left: -254px;
+  bottom: 42px;
+  z-index: 5;
+  width: 930px;
+  padding: 30px 46px;
+  border-radius: 20px;
+  background: #1c1c1c;
+}
+.about-us__slider-item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.about-us__slider-item-desc {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  line-height: 2;
+  letter-spacing: 0.6px;
+}
+</style>
+<body>
+    <section class="rating">
+        <div class="rating__inner">
+          <h2 class="rating__title"><span class="rating__title-text">Что о нас говорят наши клиенты? Все отзывы Вы можете
+              уточнить напрямую у каждого с кем мы работаем, мы следим за качеством!</span><span
+              class="rating__title-icon1"><svg width="292.000000" height="310.000000" viewBox="0 0 292 310" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                  <Created>with Pixso.</Created>
+                </desc>
+                <defs />
+                <g opacity="0.100000">
+                  <path id="“"
+                    d="M157.32 310L157.32 196.78C157.32 144.66 168.54 101.53 190.99 67.39C214.33 33.24 248 10.78 292 0L292 47.17C265.06 54.36 245.75 67.84 234.08 87.6C222.41 106.47 215.68 131.18 213.89 161.73L265.06 161.73L265.06 310L157.32 310ZM0 310L0 196.78C0 144.66 11.22 101.53 33.67 67.39C57.01 33.24 90.67 10.78 134.67 0L134.67 47.17C107.74 54.36 88.43 67.84 76.76 87.6C65.09 106.47 58.35 131.18 56.56 161.73L107.74 161.73L107.74 310L0 310Z"
+                    fill="#1572D3" fill-opacity="1.000000" fill-rule="evenodd" />
+                </g>
+              </svg></span><span class="rating__title-icon2"><svg width="279.000000" height="297.000000"
+                viewBox="0 0 279 297" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                  <Created>with Pixso.</Created>
+                </desc>
+                <defs />
+                <g opacity="0.100000">
+                  <path id="“"
+                    d="M128.67 297L128.67 188.53C128.67 138.6 117.95 97.27 96.5 64.56C74.2 31.85 42.03 10.33 0 0L0 45.19C25.73 52.08 44.17 64.99 55.33 83.93C66.48 102.01 72.92 125.68 74.63 154.95L25.73 154.95L25.73 297L128.67 297ZM279 297L279 188.53C279 138.6 268.27 97.27 246.82 64.56C224.52 31.85 192.35 10.33 150.32 0L150.32 45.19C176.05 52.08 194.5 64.99 205.65 83.93C216.8 102.01 223.24 125.68 224.95 154.95L176.05 154.95L176.05 297L279 297Z"
+                    fill="#1572D3" fill-opacity="1.000000" fill-rule="evenodd" />
+                </g>
+              </svg></span></h2>
+          <div class="rating__slider-wrapper">
+            <div class="rating__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="rating__slider-item swiper-slide">
+                  <div class="rating__slider-item-img"><img src="/theme/img/Rectangle8.jpeg" alt="#"></div>
+                  <div class="rating__slider-item-info">
+                    <div class="rating__slider-item-rate"><span class="rating__slider-item-rate-value">5.0</span><span
+                        class="rating__slider-item-rate-text">stars</span>
+                      <div class="rating__slider-item-rate-stars"> <span><svg width="21.000000" height="20.000000"
+                            viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span></div>
+                    </div>
+                    <div class="rating__slider-item-desc"><span>Давно сотрудничаем с компанией “Бизнес сфера”</span>
+                      <ul>
+                        <li>Настроен поток клиентов</li>
+                        <li>Создан сайт</li>
+                        <li>Отлично работает отдел продаж</li>
+                      </ul>
+                    </div>
+                    <div class="rating__slider-item-name">Grace Beauty 1</div>
+                    <div class="rating__slider-item-town">Cочи</div>
+                  </div>
+                </div>
+                <div class="rating__slider-item swiper-slide">
+                  <div class="rating__slider-item-img"><img src="/theme/img/Rectangle8.jpeg" alt="#"></div>
+                  <div class="rating__slider-item-info">
+                    <div class="rating__slider-item-rate"><span class="rating__slider-item-rate-value">5.0</span><span
+                        class="rating__slider-item-rate-text">stars</span>
+                      <div class="rating__slider-item-rate-stars"> <span><svg width="21.000000" height="20.000000"
+                            viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span></div>
+                    </div>
+                    <div class="rating__slider-item-desc"><span>Давно сотрудничаем с компанией “Бизнес сфера”</span>
+                      <ul>
+                        <li>Настроен поток клиентов</li>
+                        <li>Создан сайт</li>
+                        <li>Отлично работает отдел продаж</li>
+                      </ul>
+                    </div>
+                    <div class="rating__slider-item-name">Grace Beauty 2</div>
+                    <div class="rating__slider-item-town">Cочи</div>
+                  </div>
+                </div>
+                <div class="rating__slider-item swiper-slide">
+                  <div class="rating__slider-item-img"><img src="/theme/img/Rectangle8.jpeg" alt="#"></div>
+                  <div class="rating__slider-item-info">
+                    <div class="rating__slider-item-rate"><span class="rating__slider-item-rate-value">5.0</span><span
+                        class="rating__slider-item-rate-text">stars</span>
+                      <div class="rating__slider-item-rate-stars"> <span><svg width="21.000000" height="20.000000"
+                            viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span></div>
+                    </div>
+                    <div class="rating__slider-item-desc"><span>Давно сотрудничаем с компанией “Бизнес сфера”</span>
+                      <ul>
+                        <li>Настроен поток клиентов</li>
+                        <li>Создан сайт</li>
+                        <li>Отлично работает отдел продаж</li>
+                      </ul>
+                    </div>
+                    <div class="rating__slider-item-name">Grace Beauty 3</div>
+                    <div class="rating__slider-item-town">Cочи</div>
+                  </div>
+                </div>
+                <div class="rating__slider-item swiper-slide">
+                  <div class="rating__slider-item-img"><img src="/theme/img/Rectangle8.jpeg" alt="#"></div>
+                  <div class="rating__slider-item-info">
+                    <div class="rating__slider-item-rate"><span class="rating__slider-item-rate-value">5.0</span><span
+                        class="rating__slider-item-rate-text">stars</span>
+                      <div class="rating__slider-item-rate-stars"> <span><svg width="21.000000" height="20.000000"
+                            viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span><span><svg width="21.000000" height="20.000000" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                              <Created>with Pixso.</Created>
+                            </desc>
+                            <defs />
+                            <path id="Star 1"
+                              d="M9.32 -0.14L6.64 5.29C6.53 5.51 6.32 5.66 6.08 5.7L0.09 6.57C-0.53 6.66 -0.78 7.41 -0.33 7.85L4 12.07C4.18 12.25 4.26 12.49 4.22 12.74L3.2 18.71C3.1 19.32 3.74 19.79 4.28 19.5L9.64 16.68C9.86 16.56 10.13 16.56 10.35 16.68L15.71 19.5C16.25 19.79 16.89 19.32 16.79 18.71L15.77 12.74C15.73 12.49 15.81 12.25 15.99 12.07L20.32 7.85C20.77 7.41 20.52 6.66 19.9 6.57L13.91 5.7C13.67 5.66 13.46 5.51 13.35 5.29L10.67 -0.14C10.39 -0.7 9.6 -0.7 9.32 -0.14Z"
+                              fill="#EFBF14" fill-opacity="1.000000" fill-rule="evenodd" />
+                          </svg></span></div>
+                    </div>
+                    <div class="rating__slider-item-desc"><span>Давно сотрудничаем с компанией “Бизнес сфера”</span>
+                      <ul>
+                        <li>Настроен поток клиентов</li>
+                        <li>Создан сайт</li>
+                        <li>Отлично работает отдел продаж</li>
+                      </ul>
+                    </div>
+                    <div class="rating__slider-item-name">Grace Beauty 4</div>
+                    <div class="rating__slider-item-town">Cочи</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="apps.js"></script>
+</body>
+</html>

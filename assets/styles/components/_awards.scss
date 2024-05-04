@@ -1,0 +1,57 @@
+.awards {
+    display: flex;
+    padding-bottom: 80px;
+    padding-inline: 20px;
+    position: relative;
+
+    &-navigation {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        column-gap: 20px;
+        
+        &-button {
+            width: 52px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            cursor: pointer;
+
+            &--prev {
+                background-image: url('../img/svg/icon-arrow_l.svg');
+            }
+
+            &--next {
+                background-image: url('../img/svg/icon-arrow_r.svg');
+            }
+        }
+    }
+
+    &__slider {
+        padding: 12px;
+
+        &-item {
+            max-width: 535px;
+            max-height: 423px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__image {
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+
+}

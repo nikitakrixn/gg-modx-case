@@ -1,0 +1,37 @@
+.transformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        @include fluid-text(30,17);
+        font-weight: 500;
+        color: $color-text-light;
+        
+    }
+
+    &__images {
+        position: relative;
+        height: 100%;
+        flex: 1 30%;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        max-height: 844px;
+        object-fit: contain;
+
+        &-texture {
+            position: absolute;
+            bottom: 2px;
+            right: 68px;
+            z-index: -1;
+            transform: scale(1.18);
+        }
+    }
+}

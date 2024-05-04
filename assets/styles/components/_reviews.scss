@@ -1,0 +1,147 @@
+.reviews {
+    display: flex;
+    padding-block: 80px;
+    padding-inline: 20px;
+    background-image: url('../img/bg_dragon.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    @include mobile {
+        background-image: url('../img/svg/logotype_horizontal.svg');
+    }
+
+    &__slider {
+        position: relative;
+    }
+
+    &-navigation {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        column-gap: 20px;
+        
+        &-button {
+            width: 52px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            cursor: pointer;
+
+            &--prev {
+                background-image: url('../img/svg/icon-arrow_l.svg');
+            }
+
+            &--next {
+                background-image: url('../img/svg/icon-arrow_r.svg');
+            }
+        }
+    }
+
+    .review-card-video {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 616px;
+        min-height: 367px;
+
+        &__body {
+            position: relative;
+            @include border-style($border-radius, $color-gradient-2-start);
+        }
+
+        &__playbtn {
+            @include abs-center;
+            background-image: url('../img/icon-play.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 95px;
+            height: 94px;
+        }
+
+        &__title {
+            color: #2F090C;
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+
+        &__image {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .review-card {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #2F090C;
+        padding-block: 30px;
+        padding-inline: 50px;
+        row-gap: 33px;
+        max-width: 616px;
+        
+        transition: height 0.5s ease-out;
+        position: relative;
+        @include border-style($border-radius, $color-gradient-2-start);
+        cursor: pointer;
+
+        @include tablet-above {
+            height: 367px;
+            @include hover {
+                height: 100%;
+            }
+        }
+        
+
+
+        &__icon {
+            position: absolute;
+            background-image: url('../img/svg/icon-quotes_gold.svg');
+            width: 42px;
+            height: 31px;
+            right: 40px;
+        }
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        &__name {
+            @include gradient-text(90deg, $color-gradient-2-start, $color-gradient-2-end);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__company {
+            color: $color-text-light;
+            font-size: 14px;
+        }
+
+        &__title {
+            @include gradient-text(90deg, $color-gradient-2-start, $color-gradient-2-end);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__body {
+            font-size: 14px;
+            color: $color-text-light;
+            overflow: hidden;
+            
+            & p {
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+}

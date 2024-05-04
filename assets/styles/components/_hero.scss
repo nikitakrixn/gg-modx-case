@@ -1,0 +1,90 @@
+.hero {
+    width: 100%;
+    &__container {
+        display: flex;
+    }
+
+    &__images {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 410px;
+        margin-left: -23px;
+
+        @include tablet {
+            display: none;
+        }
+
+        &:after {
+            content: '';
+            @include abs-center();
+            background-image: url('../img/hero_texture.png');
+        }
+    }
+
+    &__image,
+    &__image-texture {
+      width: 100%;
+    }
+
+    &__image {
+        transform: rotate(-2.31deg);
+        clip-path: ellipse(45% 48% at 45% 50%);
+        object-fit: cover;
+
+        &-texture {
+            position: absolute;
+            top: 0;
+            right: -23px;
+            z-index: -1;
+            height: 100%;
+            transform: scale(1.4, 1.2);
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 40px;
+        text-align: right;
+
+        @include tablet {
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        @include fluid-text(34, 22);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        @include fluid-text(65, 54);
+        @include gradient-text(151.58deg,$color-gradient-2-start,$color-gradient-2-end);
+        font-weight: 600;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include mobile-s {
+            @include fluid-text(28, 26);
+        }
+    }
+
+    &__description {
+        margin-block: auto;
+
+        &--highlight {
+            font-weight: 700;
+            color: $color-gradient-2-start;
+        }
+
+        & > p {
+            margin: 0;
+        }
+    }
+
+
+
+}

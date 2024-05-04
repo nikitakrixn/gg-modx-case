@@ -1,0 +1,187 @@
+.form-consultant {
+    position: fixed;
+    padding: 0;
+    border: none;
+    border-radius: $border-radius;
+    z-index: 13;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        position: relative;
+        padding-block: 51px;
+        padding-inline: 85px;
+
+        @include mobile {
+            padding-inline: 25px;
+            row-gap: 25px;
+        }
+    }
+
+    &__close-button-wrapper {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+
+        @include mobile {
+            top: 8px;
+            right: 10px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    &__title {
+        font-weight: 400;
+        @include fluid-text(38,24);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        @include fluid-text(16,14);
+        line-height: 26.72px;
+        @include gradient-text(2deg,#57000A,#7B001E);
+    }
+
+    &__body {
+        display: flex;
+        column-gap: 78px;
+    }
+
+    &__image {
+        z-index: 2;
+        &-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &-logo {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            object-fit: contain;
+            max-width: 114px;
+            max-height: 44px;
+        }
+
+        &-texture {
+            position: absolute;
+            bottom: -44px;
+            left: -36px;
+            z-index: -1;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 15px;
+        width: 100%;
+    }
+
+    &__input {
+        background: 
+        linear-gradient(#fff,#fff) padding-box,
+        linear-gradient(93.69deg, #E4C87E 10.28%, #A58D54 106.87%) border-box;
+        border: 1px solid transparent;
+        border-radius: $border-radius-small;
+        padding-inline: 22px;
+        width: 100%;
+        height: 59px;
+        outline: none;
+        font-size: 15px;
+        opacity: 0.5;
+
+        &:focus {
+            opacity: 1;            
+        }
+    }
+
+    &__checkbox {
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+
+        &-custom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background: 
+            linear-gradient(#fff,#fff) padding-box,
+            linear-gradient(93.69deg, #E4C87E 10.28%, #A58D54 106.87%) border-box;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            transition: background-color 0.3s, border-color 0.3s;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: none;
+                left: 6px;
+                top: 2px;
+                width: 6px;
+                height: 10px;
+                
+                border: solid #A58D54;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        &-label {
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+            font-size: 14px;
+            color: $color-text-dark;
+            max-width: fit-content;
+        }
+    }
+
+    &__checkbox:checked + &__checkbox-custom {
+        &:after {
+            display: block;
+        }
+    }
+
+    &__button-submit {
+        @include reset-button;
+        @include flex-center(true);
+        @include fluid-text(18, 15);
+        column-gap: 12px;
+        height: 87px;
+        font-weight: 600;
+        color: $color-text-light;
+        background: linear-gradient(93.69deg, #E4C87E 10.28%, #A58D54 106.87%);
+        border-radius: $border-radius-small;
+        cursor: pointer;
+        padding-inline: 7px;
+
+        @include hover {
+            transform: scale(0.98);
+        }
+
+        @include mobile {
+            height: 67px;
+        }
+    }
+
+    &[open] {
+        &::backdrop {
+            background-color: rgb(0 0 0 / 85%);
+        }
+    }
+
+}

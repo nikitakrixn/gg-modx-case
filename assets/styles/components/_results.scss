@@ -1,0 +1,85 @@
+.results {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        padding-block: 50px;
+        row-gap: 30px;
+
+        @include tablet {
+            padding: 0;
+        }
+        
+
+        &--negatives {
+            margin-right: 20px;
+            .results__list {
+                .results__item::before {
+                    background-image: url('../img/svg/icon-minus.svg');
+                    
+                  
+                }
+            }
+        }
+
+        &--positives {
+            .results__list {
+                .results__item::before {
+                    background-image: url('../img/svg/icon-check.svg');
+                }
+            }
+        }
+    }
+
+    &__title {
+        @include fluid-text(34,30);
+        @include flex-center;
+        font-weight: 700;
+    }
+
+    &__images {
+        flex-shrink: 0;
+        margin-left: 20px;
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__image {
+        max-height: 660px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        row-gap: 10px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        @include fluid-text(20,17);
+        font-weight: 500;
+        padding-left: 10px;
+
+        &::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            flex-shrink: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+}

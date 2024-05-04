@@ -1,0 +1,66 @@
+.container {
+    max-width: calc($container-width + $container-padding-x * 2);
+    margin-inline: auto;
+    padding-inline: $container-padding-x;
+
+    &_right {
+      max-width: calc(100% - (100% - $container-width) / 2);
+      margin-left: auto;
+      @include tablet {
+        padding-inline: $container-padding-x;
+      }
+    }
+
+    &_half {
+      max-width: calc(1400px + $container-padding-x * 2);
+      margin-inline: auto;
+      padding-inline: $container-padding-x;
+    }
+}
+
+.grid {
+    --gridColumns: 1;
+
+    display: grid;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: 40px;
+
+    @include mobile {
+      gap: 30px;
+    }
+
+    @for $i from 2 through 12 {
+      &--#{$i} {
+        --gridColumns: #{$i};
+      }
+    }
+
+    &--2 {
+      @include tablet {
+        --gridColumns: 1;
+      }
+    }
+
+    &--3 {
+      @include desktop {
+        --gridColumns: 2;
+      }
+
+      @include mobile {
+        --gridColumns: 1;
+      }
+    }
+}
+
+.dcp-icon {
+  position: absolute;
+  bottom: 0;
+
+  @include mobile {
+    display: none;
+  }
+
+  &--left {
+    left: 70px;
+  }
+}

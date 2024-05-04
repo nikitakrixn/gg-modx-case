@@ -1,0 +1,74 @@
+.program-cost {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        object-fit: contain;
+
+        @include tablet {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        @include mobile {
+            display: none;
+            max-height: 96px;
+            max-width: 73px
+        }
+    }
+
+    &-information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        min-height: 450px;
+
+        @include mobile {
+            min-height: 250px;
+        }
+
+        &__image {
+            margin-top: auto;
+        }
+
+        &__description {
+            @include fluid-text(24,20);
+            font-weight: 500;
+
+            &--polo {
+                display: inline-flex;
+                column-gap: 20px;
+
+                &::before {
+                    content: '';
+                    background-image: url('../img/icon-list.png');
+                    width: 45px;
+                    height: 52px;
+                    background-repeat: no-repeat;
+                    flex-shrink: 0;
+                }
+            }
+
+            &--mers {
+                display: inline-flex;
+                align-items: center;
+                column-gap: 20px;
+
+                &::before {
+                    content: '';
+                    background-image: url('../img/icon-port.png');
+                    width: 56px;
+                    height: 54px;
+                    background-repeat: no-repeat;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}

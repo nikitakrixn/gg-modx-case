@@ -1,0 +1,126 @@
+.project {
+    @include flex-center();
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding-block: 36px;
+        padding-inline: 70px;
+        border: 1px solid rgb(225, 225, 225);
+        border-radius: 20px;
+        background: linear-gradient(135.00deg, rgb(69, 136, 87) 3.703%,rgb(25, 78, 39) 98.506%);
+        filter: blur(3px);
+
+        &.swiper-slide-active {
+            filter: blur(0px);
+        }
+
+
+        @include tablet {
+            padding-inline: 30px;
+        }
+    }
+
+    &-navigation {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+        margin-top: 20px;
+
+        @include tablet {
+            padding-bottom: 20px;
+        }
+
+        &-button {
+            width: 52px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            z-index: 1;
+            cursor: pointer;
+            
+            @include tablet-above {
+                @include abs-center;
+
+            }
+
+            &--prev {
+                background-image: url('../img/svg/icon-arrow_l.svg');
+                left: 50px;
+                
+            }
+
+            &--next {
+                background-image: url('../img/svg/icon-arrow_r.svg');
+                left: unset;
+                right: 0;
+            }
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile-s {
+            row-gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__image {
+        object-fit: contain;
+    }
+
+    &__title {
+        @include gradient-text(151.58deg, $color-gradient-2-start, $color-gradient-2-end);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__description {
+        color: $color-text-light;
+    }
+
+    &__feature {
+        @include border-style($border-radius-small, $color-gradient-2-start);
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        padding-block: 20px;
+        padding-inline: 15px;
+        gap: 10px;
+
+        &__icon {
+            flex-shrink: 0;
+        }
+
+        &__text {
+            @include fluid-text(16,14);
+            color: $color-text-light;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 13px;
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+
+        &-button {
+            width: 100%;
+            height: 60px;
+        }
+    }
+
+}

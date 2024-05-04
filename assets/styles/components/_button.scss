@@ -1,0 +1,36 @@
+.button {
+    @include reset-button;
+    @include flex-center(true);
+    @include border-style($border-radius-small, $color-gradient-2-start);
+    height: 30px;
+    padding-inline: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-text-light;
+    cursor: pointer;
+    transition: all 0.5s;
+
+
+    @include hover {
+      color: $color-text-dark;
+      background-color: $color-gradient-2-start;
+      transform: scale(0.98);
+      box-shadow: 0px 6px 6px 0px #00000040 inset;
+    }
+
+  &--transparent {
+    color: $color-text-light;
+    background: transparent;
+
+  }
+
+  &--accent {
+    color: $color-text-dark;
+    background: $color-gradient-2-start;
+
+    @include hover {
+        color: $color-gradient-2-start;
+        background: transparent;
+    }
+  }
+}

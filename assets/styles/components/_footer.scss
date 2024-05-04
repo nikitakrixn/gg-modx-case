@@ -1,0 +1,190 @@
+.footer {
+    padding-block: 30px;
+    background-color: #290505;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 40px;
+    
+        @include tablet {
+          column-gap: 30px;
+        }
+
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 37px;
+          padding: 50px $container-padding-x 30px;
+        }
+    }
+
+    &__navigation, &__other {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
+        }
+
+        @include mobile {
+          display: contents;
+        }
+    }
+
+    &__logo {
+        @include tablet {
+          max-width: 120px;
+        }
+    
+        @include mobile {
+          max-width: 144px;
+        }
+    }
+
+    &__menu {
+    
+        @include desktop {
+          font-size: 18px;
+        }
+    
+        @include tablet {
+          font-size: 16px;
+        }
+    
+        &-list {
+          display: flex;
+          align-items: center;
+          column-gap: 40px;
+    
+          @include desktop {
+            column-gap: 20px;
+          }
+
+          @include mobile {
+            flex-direction: column;
+            row-gap: 15px;
+          }
+        }
+    
+        &-link {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          height: 48px;
+          color: $color-text-light;
+    
+          @include hover {
+            &::after {
+              width: 100%;
+            }
+          }
+    
+          &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            translate: -50%;
+            width: 0;
+            height: 2px;
+            background-color: currentColor;
+            transition-duration: inherit;
+          }
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &-link {
+            font-size: 22px;
+            color: $color-gradient-2-start;
+            font-weight: 600;
+        }
+    }
+
+    &__copyright, &__policy {
+        color: $color-text-light;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    &__policy {
+        &-list {
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 30px;
+
+            @include mobile-s {
+                flex-direction: column;
+                row-gap: 15px;
+            }
+        }
+    }
+
+    &__socials {
+      z-index: 1;
+        &-list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            @include flex-center;
+            width: 50px;
+            height: 50px;
+            position: relative;
+
+            // @include border-style(6px, $color-gradient-2-start);
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              z-index: -1;
+              border-radius: 6px;
+              background: 
+              linear-gradient(#290505,#290505) padding-box,
+              linear-gradient(93.69deg, #E4C87E 10.28%, #A58D54 106.87%) border-box;
+              border: 2px solid transparent;
+              transition: all 0.5s ease-in;
+            }
+
+            &:hover:before {
+              transform: rotate(360deg);
+              border-radius: 50%;
+            }
+
+            &:hover img {
+              transform: scale(1.1);
+            }
+        }
+
+        &-icon {
+            transition: all 0.3s ease-out;
+            object-fit: cover;
+        }
+    }
+
+    &__button {
+      @include reset-button;
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      cursor: pointer;
+    }
+}

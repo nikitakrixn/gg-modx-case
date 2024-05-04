@@ -1,0 +1,20 @@
+.cross-button {
+  @include reset-button;
+  @include square(48px);
+  @include flex-center;
+
+  background-image: url('../img/svg/icon-close-cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $color-gradient-2-start;
+
+  position: relative;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+
+  @include hover {
+    background-color: #A58D54;
+    transform: scale(0.88);
+  }
+
+}

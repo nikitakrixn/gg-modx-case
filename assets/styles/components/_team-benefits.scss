@@ -1,0 +1,81 @@
+.team-benefits {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    &-images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &-list {
+        padding-inline: 30px;
+        column-gap: 90px;
+    }
+
+    &-navigation {
+        display: flex;
+        column-gap: 30px;
+
+        @include tablet {
+            padding-bottom: 20px;
+        }
+
+        &-button {
+            width: 52px;
+            height: 52px;
+            background-repeat: no-repeat;
+            background-position: center;
+            flex-shrink: 0;
+            z-index: 1;
+            cursor: pointer;
+            @include tablet-above {
+                @include abs-center;
+                
+            }
+
+            &--prev {
+                background-image: url('../img/svg/icon-arrow_l.svg');
+                left: 180px;
+            }
+
+            &--next {
+                background-image: url('../img/svg/icon-arrow_r.svg');
+                left: unset;
+                right: 130px;
+            }
+        }
+    }
+
+    &-item {
+        @include flex-center;
+        @include border-style($border-radius-small, $color-gradient-2-start);
+        padding-inline: 60px;
+        height: 85px;
+        position: relative;
+
+        &__icon {
+            @include flex-center;
+            @include border-style(5px, $color-gradient-2-start);
+            @include abs-center;
+            width: 72px;
+            height: 72px;
+            background-color: #2F090C;
+            padding: 8px;
+            left: 0;
+        }
+
+        &__description {
+            color: $color-text-light;
+            font-size: 16px;
+        }
+
+    }
+}

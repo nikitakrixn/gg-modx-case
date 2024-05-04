@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="./assets/styles/styles.css" 
+    />
+    
+    <title>Главная &ndash; Galyaeva Gengroup</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo logo" href="/">
+                <img
+                class="logo__image"
+                src="./assets/img/svg/logo.svg"
+                alt="GalyaevaGengroup"
+                width="143" height="53" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Обо мне</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Клиенты</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Блог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#awards">Награды</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__info">
+                <div class="header__phone">
+                    <img class="header__phone-icon" src="./assets/img/svg/icon-call.svg" loading="lazy" />
+                    <a class="header__phone-link" href="tel:88000000000">8 800 000 00 00</a>
+                </div>
+                <button class="header__button" onclick="window.formOrder.showModal()">Заказать консультацию</button>
+            </div>
+            <button
+                class="header__burger-button burger-button visible-mobile"
+                type="button"
+                onclick="mobileOverlay.showModal()"
+                >
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+        
+    </header>
+
+    <main class="content">
+        <section class="section container">
+            <div class="section__body">
+                <div class="hero">
+                    <div class="hero__container">
+                        <div class="hero__images">
+                            <img class="hero__image" src="./assets/img/gg_hero-1.jpg" alt="Hero Image" height="530" loading="lazy">
+                            <img class="hero__image-texture" src="./assets/img/hero_texture.png" alt="Hero Texture" loading="lazy">
+                        </div>
+
+                        <div class="hero__content">
+                            <h1 class="hero__title">
+                                Искусство оптимизации бизнеса и&nbsp;настройка системы управления
+                            </h1>
+                            <h1 class="hero__subtitle">Евгения Галяева</h1>
+                            <div class="hero__description">
+                                <p>Я - Дженералист и Наставник.</p>
+                                <p>Я помогаю управленцам стать <span class="hero__description--highlight">ПРОФЕССИОНАЛЬНЫМИ РУКОВОДИТЕЛЯМИ</span>
+                                и навсегда избавиться от текучки, кассовых разрывов и перегрузок.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark bg-f-1">
+            <div class="section__body">
+                <div class="features">
+                    <div class="features__list container">
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__text">
+                                <p class="feature__highlight">Более 20 лет опыта</p>
+                                <p>в управленческой деятельности</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__text">
+                                <p class="feature__highlight">Рабочие инструменты</p>
+                                <p>для увеличения прибыли</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__text">
+                                <p class="feature__highlight">Более 1000 отзывов</p>
+                                <p>о мероприятиях и спикере</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__icon"></div>
+                            <div class="feature__text">
+                                <p class="feature__highlight">Результаты учеников</p>
+                                <p>это лучший показатель</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <header class="section__header section__header-left-border">
+                    <h2 class="section__title">Успешные проекты</h2>
+                </header>
+            </div>
+            <div class="section__body">
+                <div class="project swiper">
+                    <div class="project__slider swiper-wrapper">
+                        <div class="project__details swiper-slide">
+                            <div class="project__images">
+                                <img class="project__image" src="./assets/img/GraceGroup.png" alt="GraceGroup" loading="lazy" />
+                                <img class="project__image" src="./assets/img/svg/logo.svg" alt="GalyaevaGengroup" loading="lazy" />
+                            </div>
+                            <h3 class="project__title">Сеть отелей Grace group</h3>
+                            <p class="project__description">Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet </p>
+                            <ul class="project__features grid grid--3">
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="project__actions">
+                                <button class="project__actions-button button button--transparent" onclick="window.formConsultant.showModal()">Записаться</button>
+                                <button class="project__actions-button button button--accent">Посмотреть кейс</button>
+                            </div>
+                        </div>
+                        <div class="project__details swiper-slide">
+                            <div class="project__images">
+                                <img class="project__image" src="./assets/img/GraceGroup.png" alt="GraceGroup" loading="lazy" />
+                                <img class="project__image" src="./assets/img/svg/logo.svg" alt="GalyaevaGengroup" loading="lazy" />
+                            </div>
+                            <h3 class="project__title">Сеть отелей Grace group</h3>
+                            <p class="project__description">Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet </p>
+                            <ul class="project__features grid grid--3">
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="project__actions">
+                                <button class="project__actions-button button button--transparent" onclick="window.formConsultant.showModal()">Записаться</button>
+                                <button class="project__actions-button button button--accent">Посмотреть кейс</button>
+                            </div>
+                        </div>
+                        <div class="project__details swiper-slide">
+                            <div class="project__images">
+                                <img class="project__image" src="./assets/img/GraceGroup.png" alt="GraceGroup" loading="lazy" />
+                                <img class="project__image" src="./assets/img/svg/logo.svg" alt="GalyaevaGengroup" loading="lazy" />
+                            </div>
+                            <h3 class="project__title">Сеть отелей Grace group</h3>
+                            <p class="project__description">Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet </p>
+                            <ul class="project__features grid grid--3">
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="project__actions">
+                                <button class="project__actions-button button button--transparent" onclick="window.formConsultant.showModal()">Записаться</button>
+                                <button class="project__actions-button button button--accent">Посмотреть кейс</button>
+                            </div>
+                        </div>
+                        <div class="project__details swiper-slide">
+                            <div class="project__images">
+                                <img class="project__image" src="./assets/img/GraceGroup.png" alt="GraceGroup" loading="lazy" />
+                                <img class="project__image" src="./assets/img/svg/logo.svg" alt="GalyaevaGengroup" loading="lazy" />
+                            </div>
+                            <h3 class="project__title">Сеть отелей Grace group</h3>
+                            <p class="project__description">Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet </p>
+                            <ul class="project__features grid grid--3">
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                                <li class="project__feature">
+                                    <article class="feature">
+                                        <div class="feature__icon">
+                                            <img class="feature__image" src="./assets/img/svg/icon-computer.svg" alt="Monitor" loading="lazy" />
+                                        </div>
+                                        <p class="feature__text">Оптимизация бизнес процессов</p>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="project__actions">
+                                <button class="project__actions-button button button--transparent" onclick="window.formConsultant.showModal()">Записаться</button>
+                                <button class="project__actions-button button button--accent">Посмотреть кейс</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="project-navigation">
+                    <div class="project-navigation-button project-navigation-button--prev"></div>
+                    <div class="project-navigation-button project-navigation-button--next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark flex-center bg-f-2">
+            <div class="next-skills">
+                <header class="section__header section__header-left-border">
+                    <h2 class="section__title">Что я умею?</h2>
+                </header>
+                <div class="section__body">
+                    <div class="skills swiper">
+                        <div class="skills__slider swiper-wrapper">
+                            <ul class="skills-list swiper-slide">
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14560)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14560" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14560" transform="scale(0.0333333)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14560" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHklEQVR4nO2Vv2sUURDH1x9BGzsV/AvEysIiELARxML4o/Bi/oIUBssUkZ15pSAe5H+IsbARRCwsDIQkMxc2TQwEEy53OG/v0FQSY6crs+55u5vkLvs2BMEMPDhu7t3nzbzvfJ/nHce/EkEwNmDJHxWCl5agLgQ7uvSzJZzRXDRrTh8qNGS4J4xNyxj1WsLQsGTulgZGkXdCGKv9gLsPgFXd6wwWB2iq+udO0JDNfVdoDCb8pVfkICSolwHHi6BeSHCW8GFByA8hGBT2r1qCdiZXw0oR8ExB8PjfvUv+ZUvY6ubgRU+YMM53hWFu5PMthmtC8G13O/GtKnj93eMzLfKv5PeFDNdzezhf5Yfun+09i/q9EPxM3WG7vWAuJgevCsGWtjy953MNbuVEN9ejetjOzWUzDMz5GM5oOqoVhttxVQQ3MwfKjtV2z1anQwg+7WEK76NXlVOxqRC8tgxT+tvW3OSF7J3mF2x4ZcUlBM80vzU/ca4xa84mzvamj/CmDw6uYWU/U9DHoHtAeNRX8Yv+SDEDYdjYp+qdWKkLZkjnt497bRZ+scKSlvnHPMyw5xKW8akrVBi+dEatcESROekCF8avyZx/dIZr6CtjGdcPUGXDLsIdhVnC1UOBB8HYgLB5oN4rDGtqDEL4PRHhtE5CWkhZOK6WgheN2FwYV5JurDWDJ5e8/wLeTrVdGJaPDNyBK9Qy1I4UfBxeEr8BOsIzNiwD89sAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Провожу глубокую аналитику бизнес-процессов</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14561)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14561" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14561" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14561" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGTklEQVR4nO1aXawTRRRe/xD/H/z/i9HoA4r4YFT0TdRoUEBN1MRHQISgIAKRnz0zCfEFgwgiEcHwiEqMj77exEDP6c3VIBaDRLzcnmkvePEBMHARSM3Ztpfpdna75bZbSPZLJmm7s7P7nf85U8/LkCFDhgwZMmTIkCEVDPbpicWc/6jJ6edLBLMY9evyudivJ5cG9LVJ12GEp0x+xc3170O79F3FnH5pZNfyG7yLCQd+fP/qYh5eMwhbGNV+RjhnSFVcQ64xwj5DsNXkYEalT18ZXq9S0ZcH1+UeVAX5rYTwAhOcqK3z50UhBNO/+l6D6jND8E8U4VaDSd8TSb42hLwhddL+TSyhZ8QPDnx0kyG10SCcvlDiLgFUyattjnkN5JnU8UMDq+7sCfliHl40qMrjJe4SAJPanOCekxJPUideqXiXMcGaOP8ejwAY/YeSkBd3SJ/8zjeuYILtLckgHGOEHcWcP7fYD0+Uf1p568DAvKskSA7v1rcx6akmD/MNqe/rAa0uAJOHpxMLDWFfaUDfkqbmt7d4oT8M+bPbSXFH+vT1htTCepprRwC1IPiklwaYYE2sP6Ja6kpl7aI9AcBWL62Ax9E+f0AKmyirGcr7j5i8fkXcoURqDqOeXkZ/klxzP8t/Oyl5yRZdJ3+U9I1R0Z5J/SL+3UQipx9kVJsYVTE66MEgE3xsk3Dl+YixLRXyAkOwIUrzYfIiLEb4wqD6ryUJqR1yMKNd8pIi0yPfLxWes8g5GTb7oX79gJSricw3GXmJK2+VCR6vD7GsVIi31D6qpWHyTOrvTpLvSZ63ITnbVdtLqrOjfS1GRGl+L6NaLIFweM/S6yTlDeb1He2SP4wrbxchh0cnsk4kgl2dk5Q/254X+HzzvFGDakGcr7aj+RLBe853sSyp4zAIWxzaP2YXOeKTjoA3ygTPxq2dhLwtPNnyMqp/HUL4qmsCYFT7HQLYEZqzqeml8jB/vORFs5Ii7fsMqh8csSjoEXQcxdySa1yFjxQzDaVxc57f6zJ7Rj3FECxjVGuTkJdAyaj+soslcSmHQs61U3YnRtDGcvicbGzG5vTryc0vpBaH15KMwaTORgRJJ/n6dQmeY9d262dca5RJP+x1Gkx6muth9s5LyttWL8PkP5aUvGSHppoj57/ZcN0ZCLvQEygRzHI9rFDQE8bIoXonfD3cnxOzjyAv1rLWniv3OuYtHBNAn57oVArBrEtSACZUTAX1REzMqdYlrnX0zJ64ABO83NIFUE9hgjNN2ic4Ey6l3TFFT69fl0aK05JapNzOBsHc+eZDsM1NEASZ1BJbCPKZCT5wzWsSKPqTzl/XU13vZAfKjmGwT090pUEx+8Y0CEON5gi/SdvMLVBYJmbv6h0ErbbgjKBBs4MhAb3brH11Vlyj4wKILIRIfeNZMASfxwWupGCERc3rwIaGZ6Ha2awQ2NfusxKDUX3pEMBxu/CoboFDqUu+5+G5pM+RNOYqp4dp9f31ObKRsk6D7PfZ7HULJdKvutOOmtNAQA5GmiIznJYNjMsdQma/yNk8QVhvz3VlnK5vhgoFPSHiqOuAtLhD+XtvRKorSHATv5etsIwg2iN8GPZ56549ovGG90A46DD/ETstdwUmOO9z5vHl9jwxVyY4EjE38WBSh8u7V99nr80IKyLS37qukhfIYUWwt28OUKckLXmh9hkT/HzhAoBfbb+3WuSO56vRYm7V3V4aMAjrI0y1HD7RrboDbGjzsHRUnmGbfV2gBmHYqX2ET7y0cDQoUaEUpbWwEMayA6mNTOpQtLnDoAgrrPUx8pFxBVhiiZcmSvKnhKiDEYThsDvYkGpOyubgnDDnz5XPdoUXRmD2UZondVbKdK8XMKR0rBkTqLAZtwOJ6ExqZYTP14Xte71CpVr6fh3rz6I5VAvaEUStyJnnSnU9OQeMQ614iRdC1b9PMMG3Ur/LH5xkJycalhEcjwd/eoL5TOo7V4XnIh9XVKVuCYZAdfoPElE+31Ozb1nDkzJdEwAC9yzgJUXQrydYFxu42h5wSvJ86qluPJCqjEl9yqiOXrC5I4yIMOVPkN6likKwcdEzZZvKpH6P6QjXcnowZ7Ps6rq+sekFpFsjfcKgx4h6ZlU4epr81rVOToYMGTJkyJAhQ4YMXhj/A9IFf3mKpAESAAAAAElFTkSuQmCC"/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Помогаю разработать жизнеспособную стратегию развития компании.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14562)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14562" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14562" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14562" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADvElEQVR4nO1bz29MURS+guiOHcJCiKVY+ZEISxsSIZXY2GIjKSKUOeexaYiq+g+wQyy66YJFEek5U00sRZMqc87UrxKhaNLoyO1MRzud6bw3c9+b19f5krvodO79vvO9e889977WmCaa8AVhb6MSPBTGH7YpwyOh1FazFHSJJWH4qoy5uQ2+ZvovbXBKFkddSvBwPkm+CeN9Z0Rx1SXTU6s8kRJ+d0YUV13K+K2i04RjzojiqksJ7lUmgjvOiOKkS9hrFcLnQjhecZr9d3tcCZ4JeUecRddIXcrQXW3wBZLPzbCCj0SXsNda2Er+CEPbSNpbV63Pu8FL64XxjO1j+2bScNhFwA3RJYTP845BW1CRSnC24PjToH1jo0sKa8uPw6X4SO1rCyJ/Bu0bG11aWDPFnwkHlJErfr/k96X9XSEyXVpKVKVj0O/Xish0adMArNtpIZwyjhGZLmXUQsI4kO2HPX6JhL3dmvYOFojeBo7Qp64se/tD1SUEV2otNoqN8JxrAyLTlXtwdLkSdOQvGOBTAAJVgmFlPJ/LmWWuDZitSxknItOlPolcBxwbXVoyYJbhkDAej5sBoenSCgPGzYDQdGnTAGzOAG0uAVzCOYBwdPaA719c3mJfPJQUGKN1EzVal+aPj3721okAhUjF42rsdKn/yipQq9uAqHSp47Xs2gA3qhYYTwtrKtPv7ayXZPoE5ig3RKZLGG+6nmZCeKN+0RHpGunzWqbJSrJrTY1wVBg6h3pPr6rXgNjpUsdr0hUi06VL1YDBwRMrhfB6cR0xtttLCtNgWA1Wy/+pDtesVudEStA1L5kwtpsGY27wM7qg0z0R4VhYRYn7LA9fnBugBB8aHZj/BlnnBki5/Zigo/bxoGfWlO2pdRy75sOoPxbcj4XxsyXJ9XkrTA3Iv7aGyVkGTNrPak7ODJ122rusP0KFEFws89QumKUCYXhdJnG9CeN9QuyQSXv7KiWvLMNek3Qo4d04/sVZJBgevLBaCH4tsIX9HnnlrTFJhabhVNUihvGkSSqU4GXVIoZwwCQRmf7UNt+lLKe2m6RBGW8HKGW7TZIw1Ht6VbnDVGYAdgjBrjJF0Vjsq7kgUEodK/ek7UVn8aJyXi5IHTNJgTA8CXqiE8bHJgn4QN4mIfgb2ADCqfcD3maz2CGEV4Of54uV4RWzGDHS57Uo4S0nlyj2Opygy45pFgvUBl9v4BH+H4JzzDx5u83VO1Zxm2zAK/iaMfPU4jpe6FDH038RGgBp5wYQUKPjasIkEP8ADhUh8qtMwpAAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Стабилизирую финансовое состояние бизнеса.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14563)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14563" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14563" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14563" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFbElEQVR4nO1aa4hVVRQ+pr2oKOhJDyKiInqTFVFY0juKIpL6E2Q/LCstTdHx3rV2RBFaP0IiSH/0Q6IyIsisKGNMZ+5aZ5gowrIiG+aufR0foZI64qjdWPuco2eGGefcfc6dq+CCBXPvmbPP/tb61mufGwTHZGTp7ShdKoxfCOMWyxDaCjwcHKUgNlnGelqFcGG9HowLjgaxoblcCH4dCuIgGMZPLOFUYXhdPWYZrSXYawlLLdnwRoYbheE9YfhOGH60BBuEYKsQ/jcSiBGV8JtqZdbJLQFSY/NowxseXpeuW2dO0DXr7WZCS8CoRw5vaRBHneEptl8YZzkA9WCcDeG5vp9fOaUlQOrLp4wXxo+G2agVhskHNxnFxL4UlXZUK+Z+vf7nVzNOtIzLFEhLQCSiGxWCmZagL85Mq3o7zPl6rdZtzkqsLGweF8JdluAHTQj63cY1bWcLw1rL0N7SbFZfPmW8WtT93W4m9Pxkzkiu2RDusgTbNYP1dZpzht5brZSvEcK/NTlUu+CmoNUijE9ZKj/Z025OSqxsGd90KfUQ1f5SqinYTdR2rhDMF4Ld0TUIgyNBurunHW8Zf4mDd4tH1pobHCliCZ/wTb/VirlZ16jXzXFC5kENfKWcZdgjjP+69oYBe0Jz3th4hWC7D5AkMQhjxyipfK8QPNB0MFrhPSr6jiRBCGObEP4jBL2WYY4mCBdvFXO3S/FR4hgLIOXrLMPKbABgrzB+UK0suCC9xobueacLw9ux9Xfr/wibC4OxEKWG7SpdlHy2obleCBbF3N6T2vx2rTFCOC+hk0qtArcJwQob4hSNkyBuPLX/iuvSLiHzWNMAKCU0zTrLOcWFaUCJaDOY1JpB33eZqy3hh0Jw4GDbQvh7Qp+4Iyi5bEhwQBNB4SBsCLdGXB7aP2kbAl8Lw8u2s3xDuhBqhReCW7S/EobOUbrkZTacf6beV2NzrzD0JC1NYVJjeNESDjQQ0AODKJZRhaBX4y5ohmhm8a0XPioMOwsfkccahE3TNTQPFQJCrZIOygYp8qozBMHnOQD1V0MzKZ8nqHyZFi5vixYDpG4Zt3nXlGjWwDWeD+ZqCPcls3gfly4RhgVuJvE2Cq5Kak1DYqn8tKcX3k0eqCnYdpWvSOZynT18+zLrmkyc0RAItaQwbG74YQQbdNPufq3Yh4J2p+XyM9HaOMPbKwybG5rthWGapzcWRd7E6cNsYl9vWL5Kh7CoRfeNF5iTPTYYf/MEMtMBYXhnBIt2Wsb3LeFGfyBoM8342vjlcP1rukaN4J5BJycFazXLnK8dag4g63XQ0nWqFbjDtfaD5/dCVGKDHd4jcQvtrQSfphvGze3m1BrDI5ZhSRT0hYBZPbpHGNYXYDHd8FIFoANTsnZ8yrI0PxCoZfGIdyUfHhTutwTfpwcky/BZTiB7sgDJ3qY3TDucHnt9cs51BprqESFzp3arh6HcWkexztLFOY2ybVQgQvCH7wNqZG7Xo1Q9XRyBEiv1Gb2hmZiPrrA+i0e+zMHdJbqGjqZDJ0OtKzq6RjGCJhcQghVZgJT8LYX79QA79S6xzVV5gtl6cO1oReUr86ZhIZifgVrm2pz87beEMPR1mjaTluB5fUWXc/269myjAonAeM8hKavp+xCcGnv5jTztux1M3/ZMIBwtQjPR0SQ3mMImxHpEXdinR02ZgcReeakYCxaqLwQ+opxuaoHMqoQDwvhskEfcazKf0/aCVBi/1SPWXCAGeccdUONbOnT5Hg9l2jjBgfgZi5p22pjI1o65p7l5g2C2ZVgsDB9rax39fANq2kLE2p/aZP+h76EW/9RjdXQvLHa1JjSTdO2mbv6YHJOgIfkfgpsiYsAHYOEAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Увеличиваю прибыль компании на текущих оборотах.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14564)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14564" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14564" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14564" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeElEQVR4nO2ZPWgUURDHR0UUsTEiYquFjVhoIwgiImphabTRRtBKSzExN/PwAwQhhYhNLGyMiIVlsAvEuDN3HIIfQQkRc/fmgkoUgo3x5Fb28IsLJ/vlvafsD6be+fF/8/a9XYCCggIn1CpmsxU6YQWvWKGbKnRdmYYaAe4OQ1gGvtMQc0CFRIXCbmWFJuuB6QNfUaGrlqn1J4mfMow1FRyxbLaDTzQEz8QRWFJMX1RKJ8EHao8G1lnGhVQi7aWGzXrFbHPtAZZLx9NK/Fa3XHuAMo1mFbFMr1x7gAqWM4sIfZ0eO7vKsQhN57C0wnfjZq1rkZk8RBpVs8apiGUKss8ILoBrlOlBDjPyxLVHlMjFHHatG649QMvmcPZEzBHXHtAIzI6sInOCO32YkYc57FpjPoi8yCzC+Ny1B1jGu9kTwTuuPUADsz/uPaTLjtWyYvaBD9QDcyitSL2MB8EnlPF1CpEZ8A0rNJz8/UHD4Bu1yaEtyrgYXwKbWiltBR+xQpf/6TR+EH2zivNesUKz4f3+FeAzGuPGaBmnwHeUqRJjPl6C71jGqRiJ1MBnqtXTK63Q+xiJfHozblaDr6iQiX80wWvgG/XA9Fmh24nPXEyjcxODG1z3D295cKMKUpzl1D0ZmreCl2arFzb1XKBeNnu+f2H8nFZgaTq4aAXvWTZ7/+o/lDA0y6O7tQo+za357vVMg9LR6Jm5Slgxu3okEHYKRc/OR4LpVPuA13uJsD1Dgs2oh0wSynQsy+0vNxmmlpapP/UPHBX84FpCf9VHLQ+sTyximc570HzYUeeSiwg+9qDxsGOJTSQWaUfpn8h8YpGCggL4b/gGVe6wJp7VEWsAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Избавляю от текучки персонала.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14565)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14565" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14565" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14565" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQUlEQVR4nO2YTW4CMQyFs+IOcKb2OqVCcrKp+DlU2w1qUollDgDKgwPQblhRZWAFasuEaOyR/Ele5o1f7CQjG6MoiqL0mRjdIHm7gLc7BHv8O2iLQPO8xkgDgeb/G7iKmZEGbqrERXi7M9JA+2o0YaQBNSIMaEWEgeZtaH3YYaSBYGftr1+aGmnE6AYnMzdVBtmEyJdd6QuQ+oL31gg+6BGB3pO336WPXmmk/E1v3/DpHu4z4WnadfL4zVSglzsq0dz1h22gp83Sjbpurc3SjZK345xDo1NSmdxO5/KOS5KoeUaSp+fzpr62XxzoKy9eryZDbiPr1WR4ai+7Z0lAhA64E7hAjSh9H6xFbh1UGqyx66DSYI1dB4X/Ptc7yawD7gTUiNWKHIW3FlUZrLHroNJgjV0nVhqsSdNRFEVRTBf8AH3Q6UqIl/sSAAAAAElFTkSuQmCC"/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Разрабатываю оптимальную оргструктуру компании.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14566)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14566" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14566" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14566" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADR0lEQVR4nO1ZS2sUQRBuFFTwcdOLevEiqD9BBR83TwkIHjzpxRhNNCL42Oo+Gg/5C3oXQSJoBA8Biema9SJmvXgJ2erdIFHBnNxEGKmd3ezuZB67ecj0bH/QsJnt+nbqo6q6qiOEg8N/h0HpRy3RLzD9IkDZgwFCmPz29vZu/ptQHSGEO3EC8He8h/eyDdsyh7ARZQ8GjJYrgXMwRSifE8JqnPNtIqzyXrapP9NyxToRSKvBlvObX4Tyr9GFK6IfnTe2iUAIkynOfCEtRxe8wsnFz/f28uLP/MxomEtJj0mRdcxPqz1r+du5/hgth3xf7Yiz9V9c3mlQDhsNtfX2MMXcwgZQvYh1Ok8I57q3V+fDIhDCM2EDKDjqOqu9Bzd65akg3AqfDuXZR4dF1kEo74ZzPinsm/iB6gDpwtWOdNCyFO4TRFZh4gqXlqNptkHuw5tgPzxIEDO7XaOJedEqqhNptoRyouH80kJRHWs+LxfVKesFWJq5v79jn5ZDix/VoZZd4VrQ8UGt7Kmz7XvZNlcCGA03G87OsQgVhDPNal9BeT3MmQsBqm0pwE43mx3S8JVDvtHlTURx5iIFKFQEqx8eHuSTYW2Plu+4CEZyahizRoDYyq1hLuxgIxI+GQSPjz8RAbbhKLHmGExshFAOix5BGkasbIQY3LaGoqBmPLgguoSZVRfDE6U1rfB83DCkocbtbVy+t4X9SPQ4bckwRGnjsJYlrhNc4b9Pq3286tVew1g4560chwnhUn30TRJhI8umqzHaahFscj76aqzXS1Euoq1LUeYSNoK0GiSUr5vFq5tr8eZRxzZsa63zSbCuu9tq9L0ADg4ODg62oVRSu0jLp0bLqkGoGIRxfpYnrkQwccSIOp4nrkQECq+b8RfzxJWIILzWta8mT1wbCDX5JE9cieDCEvxYvdBsunBlkSsWpvj4qEH5klAut0ZXuUwaXpli4XgeuFJ+BH4mXGL84j02cyWCFe7iyuqFzVyJaA+v2JscDb9t5kpEqso93OZklcvKl3YCoIsA36UAuhrgb3sRrGh1mhDexx41KGf439k2c3WFrVQ4q1xWvrQTAF0E+C4F0NUA3xVBdKeA745B3MY+wEHkE/8Aw+6TqAUWhe8AAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                    
+                                    </div>
+                                    <div class="skills-item__description">Структурирую бизнес, разделяя зоны ответственности.</div>
+                                </li>
+                            </ul>
+                            <ul class="skills-list swiper-slide">
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14573)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14573" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14573" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14573" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5UlEQVR4nO1ZTahVVRQ+ShJGkKVBg4KgWTiRCCIhm9TIQVBBBAVRmggRatoT71o7MC0oDKJhUdSkyIGjkAgl7d217vOq+TuQ7PnOWueZlQZlvnqkJ9a995mvd/f1nLPPeR7BD87k/nxrfXt/e++19omiG7jO0W6vnJcQPKYE25SAhGFUCP5UxgtKIL3P3k3YPZ6mbm5UN6SpmyuMzwnhj8qYZnx+UMIX0jSaE9UBSdvdoozbcwiY/hDuHD3oFlxTEelud5MS7ios4rIY2Hey/fptxikEH866FZXh7WARvUcYPzbO8T0b7+wImS0r6sime5Txr9KEEF6KR+BB4zZRs2ZFYXizLBH/iYEPutzuqaxWDIYwtssWooRHjfs0uXuzWjEYSvBb6TPC+Ltxx8018/NYMQhCeL70GWE8Z9xndrtb81gxCEJwrIIZOWDcY99tui+PFYMgBJ+Uv0Zgm3ErNZ7JY8UgxC33SKmzQXhpnN39xq0En+axYjCE8YuyZ0PY3a0Ef2ebEdgfrsJGrjW0UBiPh4vAXSe+euXmrhD4PK/4UhA33R2B9dZnUyK0BauKWDEzrL4RwhVKcKTXXxyOm42XpuqezvfceF4JTmZOhGG/FYNTMYTxZSG4mGMW38uS2zQo43oP2bqZgt2jQviOEnzbqWAZL1gAIYyF8Bth3DzO8MDUf6xuEsKPilpRM+bWHS2Csf6jiqeighjbO3S7MrwmBL8UtWLu3KoQkrB7Is+hKv+zYqHcbOQ8u8baKADdteUesr7GbKcEp5VhYpAVg3KzgLaAlOFQt8aCQwnji3Xot9Myc+scYoxvWZ/Q9TxMxK3Gs6FJVsXbF0LwZN/WlHBSGIZtF4vqwqsEWzvTRrjlys/jEbf4qu0u4aQON5bkiRfCq55cu6PD8Ee/ajNrBWznRB4hIbziybWnErfYD6xPnx4Q42wBYSyfkOK86sl1IDrTm+kcgIk8Qqri9UIYzmQ7zPCnOvB6IYxfZxo5wp114PVCCb/P6OWDdeD1wjxayRqpiNcLu8XIZgE4UgdeL+x0VYazg6cff42bsCwvr/2vbN6BEIKhQQEThg114h3cIBGOezycFL057zVeSdm8hW7mrZcI48XNVfB6YYWaZzFujQJg5UYVvDNgt+ZC+Kr/QrvT7b0x2nJ3RTXgnYGk7RYpAwrjz9m2SZxUgi/t1fWgd4FV8faFtvDpq225A7dNe0E07B6eLd6+UIb3iwaafgbARSVYXTVvX2jLLS8j2BUj+E/ShKVV8UY+WKVZZsDuCOKOqngjrxDGc+UH7NyMnK2CN/JBGPaWHbCqRwj3eIXcQHTt8S/LKCordvkHqgAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                            </svg>                                                                               
+                                    </div>
+                                    <div class="skills-item__description">Выстраиваю взаимодействие между отделами компании.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14571)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14571" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14571" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14571" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFaUlEQVR4nO0YWWhcVfTVfV9www0R/BIREZXWBZUK+qEVlyKCqBWUKtaFKkmanHMVFxQV/BBFcUVwKRYVS4XWNkaTd85LB1tLVIgNSebeSUxTa6uxplgdOe/dO5mM897Mm7zaFOfAhZl7zzv7Pcv1vCY0oQlN+N9DsejNyftwuWZ8QTP0aIYxQ7DLMPYXly/cf58wkAnUtYawzzAWqy3NHbd7sxmKneoAw/hqmdDbNOErmtXNJlDnmQAWh/sEv2iGNzWpK7zZGEqGcLkVdJdhwP5VSw6uomh/yTOEf2uG573ZBJrwQSvchOlRFyfhDuWWnZz3cYlh3GkVv+8/trraTzNcKeGjCTYYglGxqvHhOk24VYQqMFxfL70C462Rd+BnTdCqGT41BAOGcLuldVnmSoywOtswcvULDH9ElxjWpKWrGbvjkwKsGelpPyMzJTSruS4MNOMWw/CiIbWg4KvznfWisIKbUtMmvNt+v9kEeEfeVxeFicEaxxrq87y/7NQZKTHyVdsJYQ2IBH1vINdydPm5CWC+Jtgh5xL76RVR51oDfT+NLnfcpQlel/C1599UJo9UYAifcm6OK2SGcERw8v7Dh6alP/x167EuJceda4YfrAwPNaJDJCTDj6GQvXBhHI5mHBIc8V5a+oMb1DHW2ztiZSC1wHnFawQKOXWYJvhLCpvUiVhGjB9Fwqgb0/IwAcyz9+DbOJy+PnWQZvhTVkPhNbpx6eH2wvUnCkO41OK9m5aHZvjA1p/nEvEI8yGP3vbTG6sbhBPi9qRGTxN+Ya36Wjr63hzN+JYNm9VJuJpgXPB+oraT0vCYIsC4ulZx0gy/Cc5wtzolLX1Jq/Yij9WoYUW5r16jILFrs8rTcTiaMRfiBDA/NX1fXWU9koulT/CSxen2GoGxTnWEJfCrNHyxjBjbrLIDtfqschDc8JvojrTE4Y13P3qkZtwtiSdJjsQ7Ivk9TL8BXC3/q+FJJjEEXVbpD+ulL7jWAF1J2ahA6lKbTExS9qzBDF52rUJS5Q47gKgtH5N0WYtulFJxi1i5kFPHx/NXp4k3rNce9xqF0NoMnfV0tqWmkjrurEXXEC6ywvlJeJo6bnNZrR4DJYK0BpGAuLKutpxgNMnKcuZ6KPkmDq8ogxjhxlp4dUMUNlFjWGC4v8aUuK5WqnRtj+AmxbxmfN8lkRl7o4z5I7Yn+iwJb7RHnejuVDyt6Fxwk3minUvUXC8rkFnDxvQntXDrVWSmdBqC8vg3AS7cyuqo+ORgLc7tZ1aey547j0u5o6FXATNXRNKuIVhfbRytvJzhMOTO5dmHsEUaPVkyl7u6ZL37RmWBM9XGXkKIq2F1gczLhuEZxzzsQAnvNYxf2lfD4rR2nLDXMp+caiSrzOLR2aRVdn3Bh0sqFJmU8VZ4h48btoWRh73BTnVI3QqIUJrgY1eILKHdeV+dVcIhIFvxb6h8QHAted5X17im09UC2ZMzwan4xnf30BDQFB+8xSljk824Jnw2cayOQghXxlsSHhA8ie3SfFAd7+1p/ZQ7K+vDDOE7cd8bAu0sH75SVsfbKR77V1oeDtQFhqEQSzyK1RF56dAMg8l40OXoisfcvvyu5xnIRN4bChOM9XzC4pJ3TNB6nKu0WSyZT3K5ew60YRq990Zt/uJSn0Xwe1b8DEMQDn7SjGVHtCT0PHt5Vdm+kj253JnzI1w0NTxlugAru2f5HV10eCx7RWCteGRiD1ioL/IIrChTboVV5LvsDYfbqhehDFa+V50jabXMIz3uZXFPLC+xpjBuapSwZnzCjbJ2bdYMT85A2E2JwiYqUvZIvdcX4fbGFdnbwnOK8GlCE5rQBG9fgn8AxyEwbkRsu6AAAAAASUVORK5CYII="/>
+                                            </defs>
+                                        </svg>                                                                                                                        
+                                    </div>
+                                    <div class="skills-item__description">Создаю эффективную и автономно действующую управленческую команду.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14570)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14570" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14570" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14570" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPklEQVR4nNWaTYgcRRSAW1QUEQUlKkH8wx/UgyBEEAxoFDx4NV4NKt48KARdtt8rDxIxED0kRIIgetWTuCqCsBiz814Pg4rGjSiy7NSbGQNmBcFVsmZH3mzv7uxs/1R3V89sHtRhoLpeffV+6lXVBIFHEcY3LcEFYewPN8v4nzAeDC4WEUYZhRiC+Ta4GOQPNtdYwtU0EGH4p//R/kuDnS4SwcPpEHFrhvdMbIKdlrlFCF7pnpzaldmP8flckAj3Z43RPTm1S3WpTq8QPTK3WYaFNR+Hs5bhqbS+lvFIHogleD39e7NPGDqDvgS23TB3eoHQgXTArRPBVSF4+5fPX7piuK9Er10vBJQPgl+dnTVXD3/bar14uSV8a1u2Iw8wSRBbleD3XTb3dcg8Yhk+EcLzuW61aZW/hfDDxSi8f00PNtP1QHkYy+bmTIiNdAorrpNPAVILLOf2JbA6p8IgQuGBKhOspUX4bGGQTstcZQl/nvjkeb3Br6Nx5Q7TMA8W8fu6mmVYaTfMQ0EVEUYzaRAhnA6qSn/WXOaSUmu0xpy3ksZSeFfV7FSyLS82zR1eIAYgDI+VdInTluDTuP1U2BoEF3Sf8gYiDF8UmPx5S3i0Ozd9a2KpQ3CsiHUtw/teIBYic1N8IHJQDOcsmUcdLbzkBoJ/6VZQeOK/tV69VkvxdiN8QeupzNJhmyXyITZhzD5nyxB8bQkOC4fPaRrWM0/m8dSlJEn3ZzxadNEsw/EK+tpCcGj7oAln7AKDribFRJ70ePr2sjolTgZJFik9oGanohCbVsH5KroDnyCaXsuCCOHMjgERwpnSIAyf7SSQ0zvGtWzFEkQ3u6IQWn5UcmmGlSSLHNTLM2H8t2ScHCtsDcJ3S0IsW8aWZXw5s9rtUnivNMJnLMMbluEb19XRHdsVQhrmCVcvsARf6s2LZfO0RObuUtVwb87cUMDtlnTHzoWI4HEh+NN1zIVZc2XhiVdNkbFljutmlxQT6k41HAmWhPFE7lG4w7C3XDDi/GARCGcswxnPk+8ntBOZIHom8L2K7SbsCTxJuwl71saFc6md9DbREnw3htX00oI0EcJ3Jj05qQrSjuDJ7LeOGlZuKFt2c27+tyx42rhrV/vYHbsLbJ5K54XxB1eY1HF11xyHC+gGvB0CBhlOYdQylUDihx2XE2OpkmYA0Q8usQQfCON7+qywFQLO6G8XiEwQl2cFS9jQPoP0R/BxEaiNtK7PC/GbSVkIlVyXTYTR+2BCGHWLdsNcp3BFXCtehN7G4sQQPV/BngajN/RZm5nL09uoQj3vC8GP6xALPoM9+eEnPJB3x+T0GJoQ7HoN9TtN3eg92Gt9nh53sJcRXVmXTXTswe77LxyjCi2HDwwnE43BxVNmdwmdNYAQHMq78MsK9qCMzjpAyihcD3bf49YmdSmUSYHU1YJxiWU8VReE3vj8D6MfhVEDOxZKAAAAAElFTkSuQmCC"/>
+                                            </defs>
+                                            </svg>                                                                                                                          
+                                    </div>
+                                    <div class="skills-item__description">Внедряю инструменты дистанционного управления.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14568)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14568" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14568" transform="scale(0.02)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14568" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLUlEQVR4nO2ZW2sTURDH1wcvH6KClxdBqxWLCipEP0x90U+QzBx9qxV9Uyx+hlLrJfjmi+1M0gpig4Ivkp6T1toq1idrpJXJrWnSZHezZ8+mmIEDgd09e36ZM3Nm/ut5A/sPzDBudxvefjEzAOlTi7qlTE6NaMJ729veAc+VFQrqkGa4bhiVJnxmCAttW4ywULnGgJpUamFh7KAPxLo8pxkexw6jOXPOMD41DN/9YqN9VJ6Z1KTOts+LNzXhVv3e2GCW5jLDhjEbfvHto7pgeFXMZU43v6PEcCs2mC9v1BHN+EAz/rUBsQuIoawJJj5nbx/uBGMYxiNDFPPqhGH8YBtgj1h6v0LqWCtMJWZyaiQShGZ1WROsxQ7Bde/gt6U5dXHn/TAm8RgNguCSJthwBWF2PPOzGSaSiYs1w6pzCG4kgvXi2/TJyIFtCBaTgjBNMdOcAEKbIXiYOAQ3PHO/Jwg5pLql2NIcXFlmuOBq22mGcus5E9Ab+LrbxAIh9y3l1RlnMUT4Mrw3dh1CndJjZljuL82qU4Zw2QlMLsQ5Uq2dArl7VTzi2DOTgavYMAVgAp75IWv031asboSd3LVnNKmUPwjBnZ4md+oZwAAewec9/1OOYDTBdAAQ+BTpJS5gCAu+IL11ep1jRtpZzWrIVhNmavWXPwjBppWXMaw2ZxeTTx+15xHYdAZShVFDLeKErWz22xekrlxYGlmBqasltlKzJljzB2H8aBGkLWaKOTXqJNg1wbRtkDqMQJQYrkWfD6aCbK27cYC4PxBJpZJfKHYdJVJXfUGkpZTCLOnFmg5DklE3qXWXGYInfQvC+CgQRAVkNnPer7FKyBtbobUt0WL7zxsw44U1afQN4Z8+gijvpdoHMpFgkgYwNsRryWCa4V3iEATzkQQ6MZErE5VMGb+ucPp4JIgGTE6NasZfziEINur6mTVzqSqamiesQ7Rss/hjhmDe2nbqmgAIJmJJzSRzwnjkwA5jIjBoghc2KoDqiQ0zPYnUtkxKBvna2otoIQWg1E6RP6nZNOnJpWmqCnwwJR+IKm2zaAAEm7Xfi5VrjEpK8cBV7MC8/Wf/AK5aBeQdLKEcAAAAAElFTkSuQmCC"/>
+                                            </defs>
+                                        </svg>                                                                                                                       
+                                    </div>
+                                    <div class="skills-item__description">Освобождаю время владельца для личных дел.</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14569)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14569" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14569" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14569" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACm0lEQVR4nO2bsYoUQRCGRzMjU5MzUM4H0NRQfAMzBUMjDwO5YLdqDEXQzMDQu8w3MDKRrdrlEEUQFQ9vrVpTQYwEbendc7nVbbdndnamx62CYgamqZn6p6vn62Y6y1Zo2s/PKeNtIdxOwf2z+GdaZc4zpgT7yugS8w9ZXabNJzvXTYC6TBN429YD2ErA2RjANgi6ZL8CQvBOGO/7Y+D6DyXY8T4+LxEj6R4wHORnfNvh887ZuW0IH0/jeSHKxEhZgGxBeyG48/u6Py8TwwTgVpcA7ByJt9uKEtjf2z6pfbgRSWbvleDB+BgaBCeJ74YGwUUxahPgM8MFZXwkhN8ik2/EK036Yz8/JYRbSvC66cRqE8C5/Lj28ktK+EQJvzedUG0C6KCzMV5dYTxoOonaBPjUu3VCqHtVGZ4J4c+qHyZZEhz18vPC+FAJvqzybSRHgkrd68L4oonu2DgJah+v1JV4kgJI4AZl3fOAEDwVxq+tIEGpWIAR55d93BHlF1tBglKxAJ4XfFznsmNVxl3WaxMgK1ibJgBbD3CtKAGJoLPYEkiKBCV2DIigs1gBkiJBie8BC+EkVoBWgpCsuwAaQWfVlUCCJChxdBb7Zv5fEswKds263AQImVgPACsBjR0EjQQnZiRIawhCYiQIRoJqJIhGgmoojDYXUJsMoc0GdZ2mw+JXYAnuKcNd7/48tBq7tACEL5WwM93yQthRhleNCjA8XH46aqGlqKUFGHQ2/rzXaC8/3agAWcBWIUCRe5kAbD3AWQmwjQHOBkG2r4CzzyAbB7hyIMR4rezG4zkbpWfaFoUVYXwTBjZ8WxaC/hU38391Hf4XPOb8GScEoe5m+KG6m75NqG2xre5wcx4GT8Wc/LS9VXwL/d9xfwF9skhVVfTQQAAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                        </svg>                                                                    
+                                    </div>
+                                    <div class="skills-item__description">Создаю управляющую компанию</div>
+                                </li>
+                                <li class="skills-item">
+                                    <div class="skills-item__icon">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="30" height="30" fill="url(#pattern0_1661_14567)"/>
+                                            <defs>
+                                            <pattern id="pattern0_1661_14567" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_1661_14567" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_1661_14567" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACeklEQVR4nO2ZUW7UMBCGLSG4AS+cAAkQPPACKg88cYJegSN0F2nHfl0OUA7BLWjZelKVt15g15OicgHo06IJTRu6STfJOrHj+JdG601sx/NlZmIlQkRFRUUVdH6uHhktP5OWF4Ry7Y1p+La5PkgJYc7HhC0Rwty5syW2SuBD9fpgbg+A9uzOX9vF0afHlevT8NMeAHTvbJltW98gAYgG13QGQFScbw1Sw1WKcLD8rp7kfblttJzwueABGC0nVWOMhql3AMiy5XfeICxuoCAc8zE+NyYAx03GWXOwKQBhaZ77UqBJDRg8ANJwxc4Wi2CuDIJvAKgHa1IDBg9gWVIDjJZHowFgNEx3eQwOHgBlNQCmbTdCwweAm0416RsUAGoBq38AC/W27thUqz2DcGlQHgYDQDTU6lQ951/bEERfopZ5WpwjXaintl+seA3AIFwWI4D/B5cCdOvsl6KD3M7DntWF894AMCgPi3f5rvNl4wMDADcO82+xvW183et5DYD+RcGv1cnsxf8F7/atbPAA6DoSlol6zZbn/ChSgGosMFgAdRVcCqRa7dUdmyK82w0A/KYE3giXoo5CuI7x9wKnzjsGgOuv+w/YCCGxNa9B+HF29vGhqCty4/yfZTJ7tu2tUGsI93yM2ZDL0M/2FFwHOgS8VXRnsLCsvkK/dSpQ3wAS9Ur4JOo5/IVvIkcAdunbZo7aAETHgCMA3yOAPKwBnUYpRQAy1gDyvwiiwdlL3kNwu80c3qUANejLu8ay9qgAGC0nbKMCYBDeZ6GPEgvHs3Tgc8EDIIvXiwCqRDEC5LhTwJUiAIwRsI4pgLEGrGMRxJE+BaKiooQL/QVdtAwLcjwRuQAAAABJRU5ErkJggg=="/>
+                                            </defs>
+                                        </svg>                                                                                                                    
+                                    </div>
+                                    <div class="skills-item__description">Навожу порядок в управлении персоналом, продажами, финансами и производством.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="skills__button" type="button" onclick="window.formConsultant.showModal()">
+                            <img class="skills__button-image" src="./assets/img/svg/icon-check-wh.svg" loading="lazy"/>
+                            Записаться на консультацию
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="skills-navigation">
+                <div class="skills-navigation-button skills-navigation-button--prev skills-navigation-button--hidden"></div>
+                <div class="skills-navigation-button skills-navigation-button--next"></div>
+            </div>
+            <div class="skills__images">
+                <img class="skills__image" src="./assets/img/gg-skills.png" alt="GalyaevaGengroup" />
+            </div>
+            <img class="dcp-icon dcp-icon--left" src="./assets/img/svg/dcp-icon.svg" draggable="false" />
+        </section>
+        <section class="section container">
+            <header class="section__header section__header-left-border">
+                <h2 class="section__title">Кому подходит эта программа?</h2>
+            </header>
+            <div class="section__body">
+                <div class="program">
+                    <div class="program__image-wrapper">
+                        <img class="program__image" src="./assets/img/gg-program.png" alt="Группа компаний Галяевой" />
+                        <img class="program__image-texture" src="./assets/img/svg/logotype_horizontal-4.svg" alt="Texure" />
+                    </div>
+                    <ul class="program__list">
+                        <li class="program__item">Бизнес с оборотом от 1 млрд. рублей.</li>
+                        <li class="program__item">У компании сложная структура.</li>
+                        <li class="program__item">Группа компаний в которые входят: отели, рестораны, магазины, производство, оптово-розничная торговля.</li>
+                        <li class="program__item">Непредбанкротное состояние, нет наложенных арестов.</li>
+                        <li class="program__item">Для собственников, которые готовы вкладывать свое время в наведение порядка в организации.</li>
+                        <li class="program__item">Работаю с одной компанией в отрасли из региона.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <header class="section__header">
+                <h2 class="section__title"><span class="section__title--white">Заполни форму и</span> получи в подарок</h2>
+            </header>
+            <div class="section__body container">
+                <div class="form-block">
+                    <form class="form-block__form">
+                        <fieldset class="form-block__fieldset">
+                            <input type="tel" name="phone" class="form-block__input" placeholder="Ваш телефон" />
+                            <button type="submit" class="form-block__button">Оставить заявку</button>
+                        </fieldset>
+                        <label class="form-block__checkbox-label">
+                            <input type="checkbox" class="form-block__checkbox" name="policy" hidden />
+                            <span class="form-block__checkbox-custom"></span>
+                            Я даю согласие на обработку персональных данных и принимаю
+                            <a href="" class="form-block__link form-block__link--policy">политику конфиденциальности</a>
+                        </label>
+                    </form>
+                    <a class="form-block__link form-block__link--telegram" href="https://t.me/s/galiaeva_ev" target="_blank">
+                        Перейти в телеграм
+                        <span class="form-block__icon">
+                            <img class="form-block__image" src="./assets/img/svg/icon-telegram.svg" />                              
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section only-padding container">
+            <header class="section__header">
+                <h2 class="section__title">Какие проблемы решаю что получите на выходе</h2>
+            </header>
+            <div class="section__body">
+                <div class="results">
+                    <div class="results__block results__block--negatives">
+                        <div class="results__title">До</div>
+                        <ul class="results__list">
+                            <li class="results__item">
+                                Нехватка персонала
+                            </li>
+                            <li class="results__item">
+                                Неуверенность в будущем
+                            </li>
+                            <li class="results__item">
+                                Расхождение во мнении c соучредителями и командой
+                            </li>
+                            <li class="results__item">
+                                Замучен операционкой
+                            </li>
+                            <li class="results__item">
+                                Низкая прибыль
+                            </li>
+                            <li class="results__item">
+                                Кассовые разрывы, проблема нескоординированности
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="results__images">
+                        <img src="./assets/img/Man.png" alt="Man" class="results__image" loading="lazy"  />
+                    </div>
+                    <div class="results__block results__block--positives">
+                        <div class="results__title">После</div>
+                        <ul class="results__list">
+                            <li class="results__item">
+                                Переизбыток персонала
+                            </li>
+                            <li class="results__item">
+                                Точный стратегический план на несколько лет
+                            </li>
+                            <li class="results__item">
+                                Полное согласие между топ-менеджерами и владельцами
+                            </li>
+                            <li class="results__item">
+                                Эффективная команда топ-менеджеров и свободное время
+                            </li>
+                            <li class="results__item">
+                                Максимальный уровень прибыли в вашем сегменте бизнеса
+                            </li>
+                            <li class="results__item">
+                                Пополняемые резервные фонды, руководители в полной координации
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="container_right transformation">
+                <div class="section--helper">
+                    <header class="section__header">
+                        <h2 class="section__title">Какую трансформацию
+                            проходит собственник? 
+                            </h2>
+                    </header>
+                    <div class="section__body"> 
+                        <div class="transformation__text">
+                            Ежегодный выезд на стратегическую сессию.
+                            Безотказная технология извлечения цели, предприниматель что-то в голове думает, 
+                            но не осознает.
+                        </div>
+                    </div>
+                </div>
+                <div class="transformation__images">
+                    <img class="transformation__image" src="./assets/img/gg--transofrmation.png" alt="GalyaevaGengroup" />
+                </div>
+            </div>
+            <img class="dcp-icon dcp-icon--left" src="./assets/img/svg/dcp-icon.svg" draggable="false" />
+        </section>
+        <section class="section">
+            <div class="container">
+                <header class="section__header section__header-left-border">
+                    <h2 class="section__title">Что получает ваша команда</h2>
+                </header>
+            </div>
+            <div class="section__body">
+                <div class="team-benefits">
+                    <div class="team-benefits__slider swiper">
+                        <div class="team-benefits__list swiper-wrapper">
+                            <img src="./assets/img/teambeneficts.png" alt="Team" class="team-benefits__image swiper-slide" loading="lazy">
+                            <img src="./assets/img/teambeneficts.png" alt="Team" class="team-benefits__image swiper-slide" loading="lazy">
+                            <img src="./assets/img/teambeneficts.png" alt="Team" class="team-benefits__image swiper-slide" loading="lazy">
+                        </div>
+                        
+                    </div>
+                    <div class="team-benefits-navigation">
+                        <div class="team-benefits-navigation-button team-benefits-navigation-button--prev"></div>
+                        <div class="team-benefits-navigation-button team-benefits-navigation-button--next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="section__body">
+                <div class="team-benefits container">
+                    <ul class="team-benefits-list grid grid--3">
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-struct-1.svg" alt="struct"></div>
+                            <div class="team-benefits-item__description">Четкая структура</div>
+                        </li>
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-idea-submit.svg" alt="idea"></div>
+                            <div class="team-benefits-item__description">Идеальная система
+                                мотивации</div>
+                        </li>
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-strategy-lg.svg" alt="strategy"></div>
+                            <div class="team-benefits-item__description">Регламенты и стандарты</div>
+                        </li>
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-intership.svg" alt="intership"></div>
+                            <div class="team-benefits-item__description">Система стажировки и 
+                                обучения для новичков</div>
+                        </li>
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-manager1.svg" alt="Manager"></div>
+                            <div class="team-benefits-item__description">Золотые инструменты 
+                                руководителя</div>
+                        </li>
+                        <li class="team-benefits-item">
+                            <div class="team-benefits-item__icon"><img src="./assets/img/svg/icon-investition.svg" alt="Investition"></div>
+                            <div class="team-benefits-item__description">Финансовое планирование</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <header class="section__header section__header-left-border">
+                <h2 class="section__title">Стоимость программы</h2>
+            </header>
+            <div class="section__body">
+                <div class="program-cost">
+                    <div class="program-cost-information">
+                        <img src="./assets/img/gg-program-polo.png" alt="Polo" class="program-cost-information__image" />
+                        <div class="program-cost-information__description program-cost-information__description--polo">
+                            Диагностика и стратегические сессии
+                        </div>
+                    </div>
+                    <img class="program-cost__image" alt="Avtologo" width="193" height="200" src="./assets/img/svg/logotype_horizontal-2.svg" />
+                    <div class="program-cost-information">
+                        <img src="./assets/img/gg-program-mers.png" alt="Mers" class="program-cost-information__image" />
+                        <div class="program-cost-information__description program-cost-information__description--mers">
+                            Генеральная уборка бизнеса
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="guarantee-section"> 
+            <div class="guarantee-section__helper">
+                <h2 class="guarantee-section__title">Гарантия</h2>
+                <div class="guarantee-content">
+                    <div class="guarantee-content__item">
+                        <div class="guarantee-content__subtitle">+70%</div>
+                        <div class="guarantee-content__text">Свободного времени для владельца</div>
+                    </div>
+                    <div class="guarantee-content__item">
+                        <div class="guarantee-content__subtitle">+20%</div>
+                        <div class="guarantee-content__text">Прирост чистой прибыли</div>
+                    </div>
+                </div>
+                <img class="dcp-icon dcp-icon--left" src="./assets/img/svg/dcp-icon.svg" draggable="false" />
+            </div>
+            <div class="guarantee-section__helper hidden-mobile">
+                <div class="guarantee-section__image-wrapper">
+                    <img src="./assets/img/svg/logo.svg" class="guarantee-section__image-texture" />
+                    <img src="./assets/img/gg-guarantee.png" class="guarantee-section__image" />
+                </div>
+            </div>
+            
+        </section>
+        <section class="section">
+            <div class="container">
+                <header class="section__header section__header-left-border">
+                    <h2 class="section__title">Отзывы</h2>
+                </header>
+            </div>
+            <div class="section__body">
+                <div class="reviews">
+                    <div class="reviews__slider swiper">
+                        <ul class="reviews__slider-list swiper-wrapper">
+                            <li class="swiper-slide reviews__slider-item">
+                                <blockquote class="review-card">
+                                    <div class="review-card__icon"></div>
+                                    <header class="review-card__header">
+                                        <cite class="review-card__name">Фамилия Имя</cite>
+                                        <cite class="review-card__company">Директор компании</cite>
+                                    </header>
+                                    <div class="review-card__title">
+                                        Отзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»
+                                    </div>
+                                    <div class="review-card__body">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.</p>
+                                    </div>
+                                </blockquote>
+                            </li>
+                            <li class="swiper-slide reviews__slider-item ">
+                                <div class="review-card-video">
+                                    <div class="review-card-video__body">
+                                        <a class="review-card-video__link" href="" target="_blank">
+                                            <span class="review-card-video__playbtn"></span>
+                                            <img class="review-card-video__image" src="./assets/img/Video-poster.png" />
+                                        </a>
+                                    </div>
+                                    <div class="review-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide reviews__slider-item">
+                                <blockquote class="review-card">
+                                    <div class="review-card__icon"></div>
+                                    <header class="review-card__header">
+                                        <cite class="review-card__name">Фамилия Имя</cite>
+                                        <cite class="review-card__company">Директор компании</cite>
+                                    </header>
+                                    <div class="review-card__title">
+                                        Отзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»
+                                    </div>
+                                    <div class="review-card__body">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.</p>
+                                    </div>
+                                </blockquote>
+                            </li>
+                            <li class="swiper-slide reviews__slider-item">
+                                <blockquote class="review-card">
+                                    <div class="review-card__icon"></div>
+                                    <header class="review-card__header">
+                                        <cite class="review-card__name">Фамилия Имя</cite>
+                                        <cite class="review-card__company">Директор компании</cite>
+                                    </header>
+                                    <div class="review-card__title">
+                                        Отзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»
+                                    </div>
+                                    <div class="review-card__body">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet.</p>
+                                    </div>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews-navigation">
+                        <div class="reviews-navigation-button reviews-navigation-button--prev"></div>
+                        <div class="reviews-navigation-button reviews-navigation-button--next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="section__body container">
+                <header class="section__header">
+                    <h2 class="section__title"><span class="section__title--white">Заполни форму и</span> получи в подарок 
+                        <span class="section__title--white"> два ценных проверенных годами на многих компаниях инструмента</span></h2>
+                </header>
+                <div class="form-block">
+                    <form class="form-block__form">
+                        <fieldset class="form-block__fieldset">
+                            <input type="tel" name="phone" class="form-block__input" placeholder="Ваш телефон" />
+                            <button type="submit" class="form-block__button">Оставить заявку</button>
+                        </fieldset>
+                        <label class="form-block__checkbox-label">
+                            <input type="checkbox" class="form-block__checkbox" name="policy" hidden />
+                            <span class="form-block__checkbox-custom"></span>
+                            Я даю согласие на обработку персональных данных и принимаю
+                            <a href="" class="form-block__link form-block__link--policy">политику конфиденциальности</a>
+                        </label>
+                    </form>
+                    <a class="form-block__link form-block__link--telegram" href="https://t.me/s/galiaeva_ev" target="_blank">
+                        Перейти в телеграм
+                        <span class="form-block__icon">
+                            <img class="form-block__image" src="./assets/img/svg/icon-telegram.svg" />                              
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <header class="section__header section__header-left-border">
+                    <h2 class="section__title">Личный видеоблог</h2>
+                </header>
+            </div>
+            <div class="section__body">
+                <div class="personal-vlog">
+                    <div class="personal-vlog__slider swiper">
+                        <div class="personal-vlog__slider-list swiper-wrapper">
+                            <div class="personal-vlog-card-video swiper-slide">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+
+                            <div class="personal-vlog-card-video swiper-slide">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+                    
+                            <div class="personal-vlog-card-video swiper-slide ">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+
+                            <div class="personal-vlog-card-video swiper-slide ">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+                        
+                            <div class="personal-vlog-card-video swiper-slide ">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+                            <div class="personal-vlog-card-video swiper-slide ">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+                            <div class="personal-vlog-card-video swiper-slide ">
+                                <div class="personal-vlog-card-video__body">
+                                    <a class="personal-vlog-card-video__link" href="" target="_blank">
+                                        <span class="personal-vlog-card-video__playbtn"></span>
+                                        <img class="personal-vlog-card-video__image" src="./assets/img/Video-bg-2.png" />
+                                    </a>
+                                </div>
+                                <div class="personal-vlog-card-video__title">Видеоотзыв о программе обучения «ЗОЛОТЫЕ ИНСТРУМЕНТЫ РУКОВОДИТЕЛЯ»</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-vlog-navigation">
+                        <div class="personal-vlog-navigation-button personal-vlog-navigation-button--prev"></div>
+                        <div class="personal-vlog-navigation-button personal-vlog-navigation-button--next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="container">
+                <header class="section__header section__header-left-border" id="awards">
+                    <h2 class="section__title section__title--white">Награды и премии</h2>
+                </header>
+                <div class="section__body">
+                    <div class="awards">
+                        <div class="awards__slider swiper">
+                            <div class="awards__slider-list swiper-wrapper">
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/1.jpeg" />
+                                    </div>
+                                </div>
+                        
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/2.jpeg" />
+                                    </div>
+                                </div>
+                            
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/3.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/4.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/5.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/6.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/7.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/8.jpeg" />
+                                    </div>
+                                </div>
+                                <div class="awards__slider-item swiper-slide">
+                                    <div class="awards__body">
+                                        <img class="awards__image" src="./assets/img/sert/9.jpeg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="awards-navigation">
+                            <div class="awards-navigation-button awards-navigation-button--prev"></div>
+                            <div class="awards-navigation-button awards-navigation-button--next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container">
+            <header class="section__header section__header-left-border">
+                <h2 class="section__title section__title--white">шаги к стабилизации 
+                    Вашего успеха</h2>
+            </header>
+            <div class="section__body">
+                <div class="success-steps-form">
+                    <form id="multiStepForm" class="success-steps-form__container">
+                        <div class="success-steps-form__step success-steps-form__step-active" data-step="1">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">01</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/svg/icon-resume-lg.svg" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Заполни заявку</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <fieldset class="form-block__fieldset">
+                                        <input type="tel" name="phone" class="form-block__input" placeholder="Ваш телефон" />
+                                        <button type="submit" class="form-block__button">Оставить заявку</button>
+                                    </fieldset>
+                                    <label class="form-block__checkbox-label">
+                                        <input type="checkbox" class="form-block__checkbox" name="policy" hidden />
+                                        <span class="form-block__checkbox-custom"></span>
+                                        Я даю согласие на обработку персональных данных и принимаю
+                                        <a href="" class="form-block__link form-block__link--policy">политику конфиденциальности</a>
+                                    </label>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="2">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">02</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-gift.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Связь с менеджером
+                                    и получение подарка</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="3">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">03</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-analyze.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Личная 
+                                    экспресс-диагностика
+                                    от Евгении Галяевой</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="4">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">04</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-strategy.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Стратегическая сессия</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="5">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">05</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-sovok.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Генеральная уборка 
+                                    бизнеса</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="6">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">06</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-new.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Переход на новый 
+                                    уровень</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--next">Далее 
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-right.png" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="success-steps-form__step" data-step="7">
+                            <header class="success-steps-form__header">
+                                <div class="success-steps-form__header-content">
+                                    <div class="success-steps-form__header-content--top">
+                                        <div class="success-steps-form__header-numberstep">07</div>
+                                        <img class="success-steps-form__header-icon" src="./assets/img/icon-rost-slaby.png" alt="icon" />
+                                    </div>
+                                    <img class="success-steps-form__header-logo" src="./assets/img/svg/logo.svg" />
+                                </div>
+                                <div class="success-steps-form__header-title">Рост прибыли 
+                                    и свободного времени</div>
+                            </header>
+                            <div class="success-steps-form__body">
+                                Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. 
+Lorem ipsum dolor sit amet consectetur. Nunc posuere diam risus hendrerit volutpat sem amet. Lorem ipsum dolor sit amet 
+                            </div>
+                            <div class="success-steps-form__body">
+                                <div class="success-steps-form__body-item">
+                                    <div class="success-steps-form__body-text">
+                                        8 800 000 00 00
+                                    </div>
+                                </div>
+                                <button type="button" class="success-steps-form__button success-steps-form__button--prev">
+                                    <img class="success-steps-form__button--image" src="./assets/img/icon-left.png" />
+                                    Назад 
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__navigation">
+                <a class="footer__logo logo" href="/">
+                    <img src="./assets/img/svg/logo.svg" class="logo__image" width="141" height="53" />
+                </a>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">Обо мне</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">Клиенты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">Блог</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#awards">Награды</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__phone">
+                    <img class="footer__phone-icon" src="./assets/img/svg/icon-call.svg" loading="lazy" />
+                    <a class="footer__phone-link" href="tel:88000000000">8 800 000 00 00</a>
+                </div>
+            </div>
+            <div class="footer__other">
+                <div class="footer__copyright">© 2015-2024 Е. В. Галяева </div>
+                <div class="footer__policy">
+                    <ul class="footer__policy-list">
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-link" href="">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-link" href="">Правовая информация</a>
+                        </li>
+                        <li class="footer__policy-item">
+                            <a class="footer__policy-link" href="">Публичная оферта</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <ul class="footer__socials-list">
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://m.ok.ru/galiaevaev" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/icon-okru.png" />
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://wa.me/+79672117383" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/icon-whatsapp.png" />
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://vk.com/ev_galyaeva" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/svg/icon-vk.svg" />
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://t.me/s/galiaeva_ev" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/svg/icon-telegram-f.svg" />
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://vc.ru/u/3099975-evgeniya-valerevna-galyaeva" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/icon-vcru.png" />
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://dzen.ru/galiaeva_ev" target="_blank">
+                                <img class="footer__socials-icon" src="./assets/img/svg/icon-dk.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="footer__button" type="button" onclick="topFunction()"><img src="./assets/img/icon-arrow_up.png" draggable="false" class="footer__icon" /></button>
+    </footer>
+
+    <dialog class="form-consultant" id="formConsultant">
+        <div class="form-consultant__content">
+            <form class="form-consultant__close-button-wrapper" method="dialog">
+                <button
+                    class="form-consultant__close-button cross-button"
+                    type="submit"
+                >
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
+            <div class="form-consultant__header">
+                <div class="form-consultant__title">Записаться на личную консультацию</div>
+                <div class="form-consultant__subtitle">Мы свяжемся с Вами в ближайшее время и ответим на все ваши вопросы</div>
+            </div>
+            <div class="form-consultant__body">
+                <div class="form-consultant__image-wrapper">
+                    <img class="form-consultant__image-logo" src="./assets/img/svg/logo.svg" />
+                    <img class="form-consultant__image" src="./assets/img/gg-form-cons.png" loading="lazy" />
+                    <img class="form-consultant__image-texture" src="./assets/img/svg/logotype_horizontal-3.svg" />
+                </div>
+    
+                <form class="form-consultant__main">
+                    <input class="form-consultant__input" name="name" placeholder="Ваше имя" type="text" autocomplete="off" />
+                    <input class="form-consultant__input" name="phone" placeholder="Телефон" type="tel" autocomplete="off" />
+                    <input class="form-consultant__input" name="email" placeholder="E-mail" type="email" autocomplete="off" />
+    
+                    <label class="form-consultant__checkbox-label">
+                        <input class="form-consultant__checkbox" name="policy" type="checkbox" hidden />
+                        <span class="form-consultant__checkbox-custom"></span>
+                        Я согласен на обработку моих персональных данных
+                    </label>
+                    
+    
+                    <button class="form-consultant__button-submit" type="submit">
+                        <img class="form-consultant__button-submit--icon" src="./assets/img/svg/icon-check-wh.svg" />
+                        Записаться на консультацию
+                    </button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="form-order" id="formOrder">
+        <div class="form-order__content">
+            <form class="form-order__close-button-wrapper" method="dialog">
+                <button
+                    class="form-order__close-button cross-button"
+                    type="submit"
+                >
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
+            <img class="form-order__image" src="./assets/img/svg/logo.svg" />
+            <div class="form-order__header">
+                <div class="form-order__title">Оставьте заявку</div>
+                <div class="form-order__subtitle">Мы свяжемся с Вами в ближайшее время и ответим на все ваши вопросы</div>
+            </div>
+            <div class="form-order__body">
+                <form class="form-order__main">
+                    <input class="form-order__input" name="name" placeholder="Ваше имя" type="text" autocomplete="off" />
+                    <input class="form-order__input" name="phone" placeholder="Телефон" type="tel" autocomplete="off" />
+                    <input class="form-order__input" name="email" placeholder="E-mail" type="email" autocomplete="off" />
+    
+                    <label class="form-order__checkbox-label">
+                        <input class="form-order__checkbox" name="policy" type="checkbox" hidden />
+                        <span class="form-order__checkbox-custom"></span>
+                        Я согласен на обработку моих персональных данных
+                    </label>
+                    
+    
+                    <button class="form-order__button-submit" type="submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+        
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+          <button
+            class="mobile-overlay__close-button cross-button"
+            type="submit"
+          >
+            <span class="visually-hidden">Close navigation menu</span>
+          </button>
+        </form>
+        <div class="mobile-overlay__body">
+          <ul class="mobile-overlay__list">
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Обо мне</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Клиенты</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Блог</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="#awards">Награды</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" href="/">Контакты</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a class="mobile-overlay__link" onclick="window.formOrder.showModal()">Заказать консультацию</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

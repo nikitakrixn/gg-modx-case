@@ -1,0 +1,59 @@
+.program {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+
+    @include tablet {
+        column-gap: 5px;
+    }
+
+    &__image-wrapper {
+        position: relative;
+
+        @include tablet {
+            display: none;
+        }
+
+    }
+
+    &__image {
+        &-texture {
+            position: absolute;
+            bottom: -92px;
+            left: 0;
+            margin-left: -55px;
+            transform: scale(1);
+            z-index: -1;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        counter-reset: custom-counter;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        font-size: 18px;
+
+        --counterContent: counter(custom-counter);
+    
+        counter-increment: custom-counter;
+    
+        &:nth-child(-n + 9) {
+          --counterContent: '0' counter(custom-counter);
+        }
+
+        &::before {
+            content: var(--counterContent);
+            font-size: 32px;
+            font-weight: 700;
+
+        }
+    }
+}

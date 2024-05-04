@@ -1,0 +1,38 @@
+/* Подключение базовых стилей */
+@import 'base/reset';
+@import 'base/fonts';
+
+/* Подключение утилит SCSS */
+@import 'utils/mixins';
+@import 'utils/utils';
+@import 'utils/variables';
+
+/* Подключение стилей макета */
+@import 'layout/globals';
+@import 'layout/grid';
+
+/* Подключение компонентов */
+@import 'components/header';
+@import 'components/burger-button';
+@import 'components/section';
+@import 'components/button';
+@import 'components/hero';
+@import 'components/feature';
+@import 'components/project';
+@import 'components/skills';
+@import 'components/program';
+@import 'components/form-block';
+@import 'components/results';
+@import 'components/transformation';
+@import 'components/team-benefits';
+@import 'components/program-cost';
+@import 'components/guarantee';
+@import 'components/reviews';
+@import 'components/personal-vlog';
+@import 'components/awards';
+@import 'components/success-steps';
+@import 'components/cross-button';
+@import 'components/mobile-overlay';
+@import 'components/footer';
+@import 'components/form-consultant';
+@import 'components/form-order';
